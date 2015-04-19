@@ -1,0 +1,27 @@
+// Because some old peecees hate that spinning symbol. :(
+
+itemDef	{
+	name backgroundwave
+//	rect -320 0 1280 480
+	rect -835 0 2340 480 // ultra wide screen
+	type ITEM_TYPE_MODEL
+	asset_model MP_BACKGROUNDMODEL
+	model_fovx   15
+	model_fovy   15
+	model_angle 180 0 0
+	style 0
+	decoration 
+	visible 1
+	}
+
+#ifdef USECINEMATICS
+itemDef	{
+	name backgroundcinemtic
+	rect  0 0 640 480
+	style 1
+	cinematic MP_CINBG
+	decoration 
+	visible 1
+	}
+
+#endif

@@ -1,0 +1,172 @@
+/*
+===========================================================================
+Copyright (C) 2015 Open Arena Team
+
+This file is part of Open Arena.
+
+Open Arena is free software; you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+
+Open Arena is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+===========================================================================
+*/
+
+#include "ui/menudef.h"
+#define	GOBACKTOMAIN  "mainmenu"
+{
+  assetGlobalDef {
+    	smallFont "gfx/2d/bigchars" 10
+    	font "gfx/2d/bigchars" 12				
+    	bigFont "gfx/2d/bigchars" 48
+	cursor "ui/assets/cursor"			
+	itemFocusSound MP_SND_HOVER		
+	shadowColor 0.0 0.0 0.0 0.25	
+    	fadeClamp 1.0	
+	fadeCycle 1	
+	fadeAmount 0.1
+  	}
+	
+
+menuDef {
+    	name "main"
+	background MP_BACKGROUND1
+    	fullScreen 1				
+	rect 0 0 853 480
+    	visible MENU_TRUE
+    	forecolor MP_FOCUSCOLOR			
+	focuscolor MP_TEXTCOLOR
+				
+	onOpen { //open mainmenu;
+		setcvar timedemo 0; // always turn this off when entering the menu, may be an inconvenience to powerusers though
+
+		
+		playLooped MP_MENUMUSIC;
+			//close main;
+		}
+
+#include "ui/common/symbol2.panel"	
+					
+itemDef {
+      	name button1
+      	text "Start"
+	background "azurebuttonlong"
+	style 1
+	action	{ 	open mainmenu;close main	}
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect 160 320 256 32
+     	textalignx	 32	
+	textaligny	 24
+	backcolor MP_BUTTONBGCOLOR
+	forecolor MP_TEXTCOLOR
+
+	visible 1 
+}
+
+itemDef {
+      	name button15
+      	text "Screen adjust"
+	background "azurebuttonlong"
+	style 1
+	action	{ 	open adjustyourscreen;close main	}
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect 160 420 256 32
+     	textalignx	 32	
+	textaligny	 24
+	backcolor MP_BUTTONBGCOLOR
+	forecolor MP_TEXTCOLOR
+
+	visible 1 
+}
+
+
+itemDef {
+      	name button1
+      	text "UTDTD"
+	background "azurebuttonlong"
+	style 1
+	action	{ 	open Loading;	close main}
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect 160 370 256 32
+     	textalignx	 32	
+	textaligny	 24
+	backcolor MP_BUTTONBGCOLOR
+	forecolor MP_TEXTCOLOR
+
+	visible 1 
+}
+
+
+
+
+
+
+
+itemDef {
+      	name title
+	text "OpenArena"
+
+	style 1
+	type 0
+	textstyle 2
+      	textscale 2
+	decoration
+   	rect 32 124 50 50
+     	textalignx	 12	
+	textaligny	 16
+	visible 1 
+}
+itemDef {
+      	name copyright
+	text "Copyright (C)2005-2015 OA Team. This program is licensed under the GNU General Public License version 2. Read COPYING for more details."
+	style 1
+	type 0
+	textstyle 2
+      	textscale 0.27
+	autowrapped
+	forecolor 0.4 0.4 0.5 1
+	decoration
+   	rect 0 350 639 130
+     	textalignx	 12	
+	textaligny	 16
+	visible 1 
+}
+
+itemDef {
+      	name copyrightg
+	text "C"
+	style 1
+	ownerdraw UI_MENUMAPNAME
+	type 0
+	textstyle 2
+      	textscale 0.27
+	autowrapped
+	forecolor 0.4 0.4 0.5 1
+	decoration
+   	rect 0 350 639 130
+     	textalignx	 12	
+	textaligny	 16
+	visible 1 
+}
+
+}
+
+}
+}
+}
+}
+}
