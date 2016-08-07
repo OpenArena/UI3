@@ -75,6 +75,18 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define TIP_SMALLTEXT 1 1 1 0.1
 
 
+// Text Scales and stuff
+// 
+// 48pt - 	1.0
+// 24pt - 	0.5
+// 9pt - 	0.1875
+
+#define SMALLFONTSIZE 	12
+#define MEDIUMFONTSIZE 	24
+#define LARGEFONTSIZE 	24
+
+#define KEYBINDBITTEXTSCALE .1875		// Controls menu columns
+
 //
 // Offsets and Alignments for main menus and the like (to adjust for like, background decoration images)
 //

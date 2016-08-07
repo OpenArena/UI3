@@ -107,6 +107,33 @@ itemDef {
 
 
 itemDef {
+      	name buttonhmain3
+      	text "Player"
+	background MP_LONGBUTTONBG
+
+	action	{ 	
+			play MP_SND_SELECT;  
+		//	close main;
+			setcvar ui_menutab "0";
+			close mainmenu;
+			open profile	
+			
+		}
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect MMENU_OFFSETITEMH 288 512 32
+        textalign MMENU_ALIGNITEM
+     	textalignx	 256	
+	textaligny	 24
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip "Choose your character and set health handicap." fadein tooltip;  setbackground MP_LONGBUTTONBGA  } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+	visible 1 
+}
+
+
+itemDef {
       	name buttonhmain2
       	text "Setup"
 	background MP_LONGBUTTONBG

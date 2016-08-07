@@ -15,6 +15,15 @@
 // TAB 0 - GAMETYPE MODES
 // -----------------------------------------------------------
 
+	onESC	{  	
+			close singleplayer;
+			
+			open mainmenu;
+	
+			setcvar ui_menutab 0;	// reset the tabs
+			play MP_SND_BACK;  
+		}
+
 itemDef {
       	name dmgamefield
 	text	"Free for All Modes"

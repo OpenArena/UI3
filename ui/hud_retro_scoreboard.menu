@@ -26,9 +26,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define	GOBACKTOMAIN  "open ingame";
 {
   assetGlobalDef {
-    	smallFont "gfx/2d/conchars" 16
-    	font "gfx/2d/bigchars" 16				
-    	bigFont "gfx/2d/bigchars" 48				
+    	smallFont "gfx/2d/bigchars" 	SMALLFONTSIZE
+    	font "gfx/2d/bigchars" 		MEDIUMFONTSIZE				
+    	bigFont "gfx/2d/bigchars" 	LARGEFONTSIZE							
 	cursor "ui/assets/cursor"	
 	scrollbarSize 1		
 	scrollBarHorz  0

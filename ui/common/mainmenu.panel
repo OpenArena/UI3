@@ -1,5 +1,34 @@
 
 
+itemDef {
+      	name buttonhmaina
+      	text "Debug Mode"
+	background MP_LONGBUTTONBG
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.3
+   	rect 580 10 40 32
+        textalign MMENU_ALIGNITEM
+     	textalignx	 0	
+	textaligny	16
+	forecolor 1 1 1 0.7
+	cvarTest "developer"
+	hideCVar { "0" }
+	action	{ 	//close main;
+			close mainmenu;
+			play MP_SND_SELECT;  
+			setcvar ui_menutab "0"; // reset
+			//uiAction randomizer; // TODO: this
+			open debug;
+			//open instantaction;
+	}
+	visible 1 
+	mouseEnter { setcvar ui_tip "Enter the magical world of Developerland" fadein tooltip;   setbackground MP_LONGBUTTONBGA } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+}
+
+
 
 itemDef {
       	name buttonhmaina

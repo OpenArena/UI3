@@ -6,6 +6,16 @@
 // Designed for controllers really. Apologies if this is "too dumb"
 // but i'd like to make the interface less daunting by default.
 
+	onEsc	{  	
+			close playmaker;
+			
+			open mainmenu;
+	
+			setcvar ui_menutab 0;	// reset the tabs
+			 play MP_SND_BACK;  
+		}
+
+
 // -----------------------------------------------------------
 // TAB 0 - GAMETYPE MODES
 // -----------------------------------------------------------
@@ -117,6 +127,28 @@ itemDef {
 	mouseEnter { setcvar ui_tip "Players must survive. Who lives last wins." fadein tooltip; } mouseExit { fadeout tooltip;} 	
 	action	{ 	setcvar ui_menutab 1;	 play MP_SND_SELECT;  
 			setcvar ui_netgametype 10;	}
+	visible 1 
+}
+
+
+itemDef {
+      	name ffa4
+      	text "Possession"
+	background MP_WIDEBUTTONBG
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect 32 192 256 32
+     	textalignx	 32	
+	textaligny	 24
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+	forecolor MP_TEXTCOLOR
+	backcolor MP_BUTTONBGCOLOR
+	mouseEnter { setcvar ui_tip "Hold the neutral flag the longest to win." fadein tooltip; } mouseExit { fadeout tooltip;} 	
+	action	{ 	setcvar ui_menutab 1;	 play MP_SND_SELECT;  
+			setcvar ui_netgametype 13;	}
 	visible 1 
 }
 

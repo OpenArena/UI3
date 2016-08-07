@@ -28,9 +28,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define	GOBACKTOMAIN  "open ingame";
 {
   assetGlobalDef {
-    	smallFont "gfx/2d/conchars" 24 //10
-    	font "gfx/2d/bigchars" 24  //12			
-    	bigFont "gfx/2d/bigchars" 24				
+    	smallFont "gfx/2d/bigchars" 	SMALLFONTSIZE
+    	font "gfx/2d/bigchars" 		MEDIUMFONTSIZE				
+    	bigFont "gfx/2d/bigchars" 	LARGEFONTSIZE								
 	cursor "ui/assets/cursor"			
 	itemFocusSound MP_SND_HOVER	
 	scrollbarSize 1		
@@ -46,15 +46,41 @@ menuDef {
 	rect 0 0 640 480
 
 itemDef {
+      	name scoreffatop
+	background "gradhorzv"
+	style 1
+	type 0
+	decoration
+	//backcolor   0.05 0.6 0.8 0.8
+	backcolor   0.0 0.0 0.0 0.9
+	scralign ALIGN_LEFT
+   	rect 0 428 128 52
+	visible 1 
+}
+
+itemDef {
       	name bhabox
 	style 1
 	type 0
-	background "ui/hud/habar"
+	background "ui/hud/cornerbarsflipped"
 	decoration
 	scralign ALIGN_LEFT
 	scralignfactor 1.0
-	backcolor 1.0 1.0 1.0 1.0
+	backcolor MP_TEXTCOLOR
    	rect 0 416 64 64
+	visible 1 
+}
+
+itemDef {
+      	name scoreffatop
+	background "gradhorz"
+	style 1
+	type 0
+	decoration
+	//backcolor   0.05 0.6 0.8 0.8
+	backcolor   0.0 0.0 0.0 0.9
+	scralign ALIGN_RIGHT
+   	rect 512 428 128 52
 	visible 1 
 }
 
@@ -63,11 +89,25 @@ itemDef {
       	name bhabox
 	style 1
 	type 0
-	background "ui/hud/ambar"
+	background "ui/hud/habar_top"
+	decoration
+	scralign ALIGN_LEFT
+	scralignfactor 1.0
+	backcolor 1.0 1.0 1.0 1.0
+   	rect 4 416 32 64
+	visible 1 
+}
+
+
+itemDef {
+      	name bhabox
+	style 1
+	type 0
+	background "ui/hud/cornerbars"
 	decoration
 	scralign ALIGN_RIGHT
 	scralignfactor 1.0
-	backcolor 1.0 1.0 1.0 1.0
+	backcolor MP_TEXTCOLOR
    	rect 576 416 64 64
 	visible 1 
 }
@@ -83,7 +123,7 @@ itemDef {
    	rect 608 428 32 32
 	visible 1 
 }
-
+/*
 
 itemDef {
       	name boxes
@@ -101,7 +141,7 @@ itemDef {
    	rect 92 428 256 48
 	visible 1 
 }
-
+*/
 itemDef {
       	name armorvalue
 	style 1
@@ -247,6 +287,92 @@ itemDef {
 }
 */
 	
+
+// Neccessary teamstuff
+
+itemDef {
+      	name itstimetoscore
+	background "gradhorz"
+	style 1
+	type 0
+	decoration
+	//backcolor   0.05 0.6 0.8 0.8
+	backcolor   0.0 0.0 0.0 0.9
+	backcolor    0.01 0.4 0.78 1.0
+	scralign ALIGN_CENTER
+   	rect 128 0 192 48
+	forecolor 0 0 0 0
+	ownerdrawflag CG_SHOW_ANYTEAMGAME
+	visible 1 
+}
+
+itemDef {
+      	name itstimetoscore
+	background "gradhorzv"
+	style 1
+	type 0
+	decoration
+	//backcolor   0.05 0.6 0.8 0.8
+	backcolor   0.5 0.02 0.27 1.0
+	scralign ALIGN_CENTER
+   	rect 320 0 192 48
+	ownerdrawflag CG_SHOW_ANYTEAMGAME
+	visible 1 
+}
+
+itemDef {
+      	name bluescore
+      	textscale 0.8
+      	style 2					
+	text ""
+      	rect 278 0 36 40
+      	visible 1 
+	textalignx 0
+	textaligny 0 
+	textalign ITEM_ALIGN_RIGHT
+      	forecolor 1 1 1 1
+	textstyle 3
+	ownerdraw CG_BLUE_SCORE
+	ownerdrawflag CG_SHOW_ANYTEAMGAME
+	decoration	  
+	}
+
+itemDef {
+      	name redscore
+      	textscale 0.8
+      	style 2					
+	text ""
+      	rect 320 0 36 40
+      	visible 1 
+	textalignx 18
+	textaligny 0 
+	textalign ITEM_ALIGN_LEFT
+      	forecolor 1 1 1 1
+	textstyle 3
+	ownerdraw CG_RED_SCORE
+	ownerdrawflag CG_SHOW_ANYTEAMGAME
+	decoration	  
+	}	
+
+/*
+itemDef {
+      	name argh
+      	textscale 2
+      	style 1				
+	text "^1YOUR HURT!"
+      	rect 0 0 640 480
+      	visible 1 
+	textalignx 320
+	textaligny 240
+	textalign ITEM_ALIGN_CENTER
+      	forecolor 1 0 0 1.0
+	backcolor 1 0 0 0.3
+	textstyle 1
+	ownerdrawflag CG_SHOW_HEALTHCRITICAL    
+	decoration	  
+	}	
+*/
+
 
 }
 }

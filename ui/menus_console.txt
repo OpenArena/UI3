@@ -10,7 +10,7 @@
 	loadMenu { "ui/loading.menu" }
 	loadMenu { "ui/console_main_menu.menu" }
 	loadMenu { "ui/main_adjustyourscreen.menu" }
-	loadMenu { "ui/main_profile.menu" }
+	loadMenu { "ui/console_profile.menu" }
 	loadMenu { "ui/main_single_player.menu" }
 	loadMenu { "ui/main_instant.menu" }
 	loadMenu { "ui/main_campaign.menu" }

@@ -28,4 +28,6 @@
 	loadMenu { "ui/connecting.menu" }
  	loadMenu { "ui/error.menu" }
 	loadMenu { "ui/transition_campaign.menu" }
+	loadMenu { "ui/debug/debug.menu" }
+	loadMenu { "ui/debug/testfilter.menu" }
 }

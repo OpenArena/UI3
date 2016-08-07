@@ -24,9 +24,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define	GOBACKTOMAIN  "open ingame";
 {
   assetGlobalDef {
-    	smallFont "gfx/2d/conchars" 16
-    	font "gfx/2d/bigchars" 16				
-    	bigFont "gfx/2d/bigchars" 48				
+    	smallFont "gfx/2d/bigchars" 	SMALLFONTSIZE
+    	font "gfx/2d/bigchars" 		MEDIUMFONTSIZE				
+    	bigFont "gfx/2d/bigchars" 	LARGEFONTSIZE								
 	cursor "ui/assets/cursor"	
 	scrollbarSize 1		
 	scrollBarHorz  0
@@ -220,9 +220,8 @@ itemDef	{
    	type 4
 //	text "Skill   Name                                       Frags    Ping   Time"
 	// TODO: Split this with actual labels over each column.
-	text "Skill   Name                                         Frags    Ping   Time"
-
-
+	//text "Skill   Name                                         Frags    Ping   Time"
+	text "Status"
 	textscale .3
 	textalign 0
 	notselectable
@@ -232,11 +231,76 @@ itemDef	{
 	forecolor     MP_BOX_FORE
 	forecolor     0.6 0.6 0.6 1
 	backcolor     MP_BOX_BACK
-	//outlinecolor  MP_BOX_OUTLINE
 	visible 1
  	rect 64 96 512 16
-	//columns 5 8 16 16 64 16 16 16 16 16 16 16 16 16 16 16 16 16
+}
+itemDef	{
+	name ffascoreboardindex
+   	type 4
+	text "Name"
+	textscale .3
+	textalign 0
+	notselectable
+	textaligny 16
+	textalignx 16
+	border 0
+	forecolor     MP_BOX_FORE
+	forecolor     0.6 0.6 0.6 1
+	backcolor     MP_BOX_BACK
+	visible 1
+ 	rect 117 96 512 16
+}
 
+itemDef	{
+	name ffascoreboardindex
+   	type 4
+	text "Frags"
+	textscale .3
+	textalign 0
+	notselectable
+	textaligny 16
+	textalignx 16
+	border 0
+	forecolor     MP_BOX_FORE
+	forecolor     0.6 0.6 0.6 1
+	backcolor     MP_BOX_BACK
+	visible 1
+ 	rect 373 96 512 16
+}
+
+itemDef	{
+	name ffascoreboardindex
+   	type 4
+	text "Ping"
+	textscale .3
+	textalign 0
+	notselectable
+	textaligny 16
+	textalignx 16
+	border 0
+	forecolor     MP_BOX_FORE
+	forecolor     0.6 0.6 0.6 1
+	backcolor     MP_BOX_BACK
+	visible 1
+ 	rect 443 96 512 16
+}
+
+
+itemDef	{
+	name ffascoreboardindex
+   	type 4
+	text "Time"
+	textscale .3
+	textalign 0
+	notselectable
+	textaligny 16
+	textalignx 16
+	border 0
+	forecolor     MP_BOX_FORE
+	forecolor     0.6 0.6 0.6 1
+	backcolor     MP_BOX_BACK
+	visible 1
+ 	rect 508 96 512 16
 }
 
 itemDef	{
@@ -511,10 +575,10 @@ itemDef {
 itemDef	{
 	name ffascoreboardindex
    	type 4
-	text " Name                     Score  Ping"
+	text "Name"
 
 
-	textscale .24
+	textscale .26
 	textalign 0
 	notselectable
 	textaligny 16
@@ -525,15 +589,16 @@ itemDef	{
 	backcolor     MP_BOX_BACK
 	//outlinecolor  MP_BOX_OUTLINE
 	visible 1
- 	rect 64 96 512 16
+	// add 256 to the red side
+ 	rect 77 98 512 16
 }
 itemDef	{
 	name ffascoreboardindex
    	type 4
-	text " Name                     Score  Ping"
+	text "Frags"
 
 
-	textscale .24
+	textscale .26
 	textalign 0
 	notselectable
 	textaligny 16
@@ -544,7 +609,89 @@ itemDef	{
 	backcolor     MP_BOX_BACK
 	//outlinecolor  MP_BOX_OUTLINE
 	visible 1
- 	rect 320 96 512 16
+	// add 256 to the red side
+ 	rect 220 98 512 16
+}
+itemDef	{
+	name ffascoreboardindex
+   	type 4
+	text "Ping"
+
+
+	textscale .26
+	textalign 0
+	notselectable
+	textaligny 16
+	textalignx 16
+	border 0
+	forecolor     MP_BOX_FORE
+	forecolor     0.6 0.6 0.6 1
+	backcolor     MP_BOX_BACK
+	//outlinecolor  MP_BOX_OUTLINE
+	visible 1
+	// add 256 to the red side
+ 	rect 261 98 512 16
+}
+
+itemDef	{
+	name ffascoreboardindex
+   	type 4
+	text "Name"
+
+
+	textscale .26
+	textalign 0
+	notselectable
+	textaligny 16
+	textalignx 16
+	border 0
+	forecolor     MP_BOX_FORE
+	forecolor     0.6 0.6 0.6 1
+	backcolor     MP_BOX_BACK
+	//outlinecolor  MP_BOX_OUTLINE
+	visible 1
+	// add 256 to the red side
+ 	rect 333 98 512 16
+}
+itemDef	{
+	name ffascoreboardindex
+   	type 4
+	text "Frags"
+
+
+	textscale .26
+	textalign 0
+	notselectable
+	textaligny 16
+	textalignx 16
+	border 0
+	forecolor     MP_BOX_FORE
+	forecolor     0.6 0.6 0.6 1
+	backcolor     MP_BOX_BACK
+	//outlinecolor  MP_BOX_OUTLINE
+	visible 1
+	// add 256 to the red side
+ 	rect 476 98 512 16
+}
+itemDef	{
+	name ffascoreboardindex
+   	type 4
+	text "Ping"
+
+
+	textscale .26
+	textalign 0
+	notselectable
+	textaligny 16
+	textalignx 16
+	border 0
+	forecolor     MP_BOX_FORE
+	forecolor     0.6 0.6 0.6 1
+	backcolor     MP_BOX_BACK
+	//outlinecolor  MP_BOX_OUTLINE
+	visible 1
+	// add 256 to the red side
+ 	rect 517 98 512 16
 }
 
 itemDef {

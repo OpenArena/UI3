@@ -1,4 +1,5 @@
 // Tool tips
+#ifdef UICONTEXTUALTIPS
 itemDef {
       	name tooltipb
 	style 1
@@ -51,6 +52,6 @@ itemDef {
 	textaligny	 16
 	visible 1 
 }
-
+#endif
 
 

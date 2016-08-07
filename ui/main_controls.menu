@@ -24,9 +24,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 {
   assetGlobalDef {
-    	smallFont "gfx/2d/bigchars" 12
-    	font "gfx/2d/bigchars" 16				
-    	bigFont "gfx/2d/bigchars" 24				
+    	smallFont "gfx/2d/bigchars" SMALLFONTSIZE 
+    	font "gfx/2d/bigchars" MEDIUMFONTSIZE				
+    	bigFont "gfx/2d/bigchars" LARGEFONTSIZE				
 	cursor "ui/assets/cursor"	
 	checkbox_checked "ui/assets/cursor"		
 	checkbox_unchecked "ui/assets/gs"		
@@ -49,6 +49,12 @@ menuDef {
 		//uiScript loadGameInfo ;
 		//uiScript updateSPMenu ;
 		close main;
+		}
+	onEsc	{  	
+			open mainmenu;	
+			setcvar ui_menutab 0;	// reset the tabs
+			close controlsmenu;
+			play MP_SND_BACK;  
 		}
 #include "ui/common/symbol2.panel"							   
 #include "ui/common/controls.panel"

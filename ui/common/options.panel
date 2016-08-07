@@ -801,7 +801,7 @@ itemDef {
       	text "Quality"
 	type ITEM_TYPE_MULTI
 	cvar "r_flareQuality"
-	cvarFloatList { "High" 1   "Low" 0 }	
+	cvarFloatList { "High" 2 "Medium" 1   "Low" 0 }	
 	background MP_FATBUTTONBG
 	backcolor MP_BUTTONBGCOLOR
 	style 1

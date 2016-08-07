@@ -10,7 +10,7 @@ onOpen {
 	}
 
 
-
+onEsc	{  	close quitter; open mainmenu}
 
 itemDef {
       	name creditse

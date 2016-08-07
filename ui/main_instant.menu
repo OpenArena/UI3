@@ -26,9 +26,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 // Instant action: Create a random botmatch. Random map, random gametype, random list of bots
 {
   assetGlobalDef {
-    	smallFont "gfx/2d/bigchars" 12
-    	font "gfx/2d/bigchars" 16				
-    	bigFont "gfx/2d/bigchars" 24				
+    	smallFont "gfx/2d/bigchars" 	SMALLFONTSIZE
+    	font "gfx/2d/bigchars" 		MEDIUMFONTSIZE				
+    	bigFont "gfx/2d/bigchars" 	LARGEFONTSIZE							
 	cursor "ui/assets/cursor"			
 	itemFocusSound MP_SND_HOVER		
 	shadowColor 0.0 0.0 0.0 0.25			

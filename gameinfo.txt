@@ -33,6 +33,7 @@ gametypes {
   { "Last Man Standing" 10 }
   { "Double Domination" 11 }
   { "Domination" 12 }
+  { "Possession" 13 }
 
 }
 
@@ -50,6 +51,7 @@ joingametypes {
   { "LMS" 10 }
   { "Double D" 11 }
   { "Dom" 12 }
+  { "Possess" 13 }
 
 }
 
@@ -65,14 +67,15 @@ maps	{
 
 // NOTE: These map picks are not final.  They are temporary for testing the progress of the campaign.
 
+	// Mapname Mapfilename TeamMembers OpponentName ParTimeToBeatsPerGametype
 	// ffa maps 
-/*0 */	{ "Egyptian Trouble" "oacmpdm3" "4" "ilara ilara ilara ilara" 2 "4" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
-/*1 */	{ "Some Spacee" "oacmpdm4" "4" "ilara" 2 "4" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
-/*2 */	{ "Blitzkrieg Base" "blitzkrieg3" "4" "ilara" 2 "4" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
-/*3 */	{ "The Other Side" "oacmpdm5" "4" "ilara" 2 "4" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
-/*4 */	{ "The Crypt" "oacmpdm1" "6" "ilara" 2 "0" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
-/*5 */	{ "The Sanctuary" "oacmpdm9" "6" "ilara" 2 "0" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
-/*6 */	{ "Subdivision" "oacmpdm8" "6" "ilara" 2 "0" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
+/*0 */	{ "Egyptian Trouble" "oacmpdm3" "4" "ssssss" 2 "4" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
+/*1 */	{ "Some Spacee" "oacmpdm4" "4" "ilara sorceress" 2 "4" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
+/*2 */	{ "Blitzkrieg Base" "blitzkrieg2" "4" "yon xyphr" 2 "4" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
+/*3 */	{ "The Other Side" "oacmpdm5" "4" "saki ilara yon" 2 "4" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
+/*4 */	{ "The Crypt" "oacmpdm1" "6" "xyphr sorceress ssssss" 2 "0" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
+/*5 */	{ "The Sanctuary" "oacmpdm9" "6" "saki ssssss yon" 2 "0" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
+/*6 */	{ "Subdivision" "oacmpdm8" "6" "ilara yon saki" 2 "0" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
 /*7 */	{ "nullmap" "pul1duel-oa" "6" "ilara" 2 "0" 4 "110" 5 "110" 6 "120" 7 "110" 8 "110" 9 "110" 11 "110" }
 
 	// ctf maps 

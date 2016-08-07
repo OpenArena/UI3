@@ -5,6 +5,15 @@
 
 // For FFA...
 
+#define	SPCUR_MAP1		""			// 0
+#define	SPCUR_MAP2		""			// 1
+#define	SPCUR_MAP3		""			// 2
+#define	SPCUR_MAP4		""			// 3
+#define	SPCUR_MAP5		"Four"			// 4
+#define	SPCUR_MAP6		"Five"			// 5
+#define	SPCUR_MAP7		"Six"			// 6
+#define	SPCUR_MAP8		"Sven"			// 7
+
 // Internal workings that don't really need to be modified
 
 
