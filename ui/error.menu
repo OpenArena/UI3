@@ -47,6 +47,7 @@ menuDef {
 		//open mainmenu;
 		setcvar timedemo 0; // always turn this off when entering the menu, may be an inconvenience to powerusers though
 		play "ui/voice/error";
+		setcvar ui_showError "1"
 		}
 			   
 	   

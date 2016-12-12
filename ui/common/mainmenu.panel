@@ -29,6 +29,52 @@ itemDef {
 }
 
 
+// Error
+
+itemDef {
+      	name buttontip1
+	cvar "com_errorMessage"
+	autowrapped
+	background "white"
+	cvarTest "ui_showError"
+	showCVar { "1" }	
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.3
+   	rect 32 0 500 78
+	decoration
+     	textalignx	 32	
+	textaligny	 24
+	forecolor MP_TEXTCOLOR
+	backcolor 	0.2 0 0 0.4
+	visible 1 
+}
+
+
+itemDef {
+      	name buttonhmaina
+      	text "Dismiss"
+	background MP_LONGBUTTONBG
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.3
+   	rect 580 10 40 32
+        textalign MMENU_ALIGNITEM
+     	textalignx	 0	
+	textaligny	16
+	forecolor 1 1 1 0.7
+	cvarTest "ui_showError"
+	showCVar { "1" }
+	action	{ 	setcvar ui_showError "0"
+	}
+	visible 1 
+	mouseEnter { setcvar ui_tip "Dismiss this error." fadein tooltip;   setbackground MP_LONGBUTTONBGA } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+}
+
 
 itemDef {
       	name buttonhmaina
@@ -260,6 +306,7 @@ itemDef {
 	background MP_LONGBUTTONBG
 
 	action	{ 	play MP_SND_SELECT;  
+			setcvar ui_menutab "0";
 			open	mods;
 			close mainmenu;
 	}

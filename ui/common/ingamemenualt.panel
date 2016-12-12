@@ -213,6 +213,7 @@ itemDef {
 	visible 1 
 }
 
+/* // Merging into  Quit menu 
 
 itemDef {
       	name buttonhmods
@@ -240,16 +241,28 @@ itemDef {
 	visible 1 
 }
 
+*/
+
 itemDef {
       	name buttonhmain5
       	text BUTTON_QUIT
 	background MP_LONGBUTTONBG
 
+
+	action	{ 	play MP_SND_SELECT;  
+			close ingame;
+			setcvar ui_menutab "0";
+			play MP_SND_SELECT;  
+			open ingamequitmenu;	
+			}
+
+/*	// Instant Quit
 	action	{ 	play MP_SND_SELECT;  
 			//close main;
 			close mainmenu;
 			close ingame;
 			uiScript "quit";	}
+*/
 	style 1
 	type ITEM_TYPE_BUTTON
 	cvarTest "ui_menuOrder"

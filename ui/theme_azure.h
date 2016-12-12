@@ -41,12 +41,16 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define MP_FATBUTTONBG 	"azurebuttoncombo"
 #define	MP_LONGBUTTONBG "azurebuttonreallylong"
 #define	MP_LONGBUTTONBGA "azurebuttonreallylonga"
+#define	MP_TABON 	"ui/assets5/tabon.tga"
+#define	MP_TABOFF 	"ui/assets5/taboff.tga"
 
-#define MP_DIALOGBG	"dialogbg_azure"	// used for every every and every box and every box and every box
+//#define MP_DIALOGBG	"dialogbg_azure"	// used for every every and every box and every box and every box
+#define MP_DIALOGBG	"ui/assets5/uishade2"	// used for every every and every box and every box and every box
+
 
 #define MP_INGAMEBUTTONBARBG "ui/assets3/igtopbtn" 
 #define MP_INGAMEBUTTONBARBG2 "ui/assets3/igtopbtn2" 
-#define MP_BACKGROUNDMODEL "models/ui/bg.md3"
+#define MP_BACKGROUNDMODEL "ui/assets5/models/bg.md3"
 #define MP_TITLECOLOR 1 1 1 1 // Title colors
 #define MP_TEXTCOLOR  0.24 0.70 0.935 1 // regular color of menu button text
 #define MP_FOCUSCOLOR 0.04 0.8 0.835 1 // focus 
@@ -62,7 +66,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define MP_BUTTON2BGCOLOR	0.156863 0.188235 0.258824 1.0
 #define MP_TABLONGBGCOLOR 	0.156863 0.188235 0.258824 1.0
 #define MP_UNTABLONGBGCOLOR 	0.156863 0.188235 0.258824 1.0
-#define MP_DIALOGBGCOLOR	0.0823529 0.101961 0.12549 0.7
+#define MP_DIALOGfBGCOLOR	0.0823529 0.101961 0.12549 0.7
+#define MP_DIALOGBGCOLOR	1 1 1 0.6
+#define MP_TABONBGCOLOR	1 1 1 1
+#define MP_TABOFFBGCOLOR	1 1 1 1
+
 
 
 #define MP_KEYBINDBGCOLOR .325 .07 .11 1.0

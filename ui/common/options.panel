@@ -6,13 +6,14 @@
 // Designed for controllers really. Apologies if this is "too dumb"
 // but i'd like to make the interface less daunting by default.
 
+#include "ui/common/borders600400.panel"
+
 // -----------------------------------------------------------
 // TAB 0 - OPTIONS
 // -----------------------------------------------------------
-
 itemDef {
       	name dmgamefield
-	text	"Options"
+	//text	"Options" // tabs 
 	background MP_DIALOGBG
 	backcolor 	MP_DIALOGBGCOLOR
 	style 1
@@ -29,7 +30,6 @@ itemDef {
 	bordercolor   MP_BOX_BORDER
 	visible 1 
 }
-
 
 itemDef {
       	name videofield
@@ -120,7 +120,7 @@ itemDef {
       	text "HUD Style"
 	type ITEM_TYPE_MULTI
 	cvar "cg_hudFiles"
-	cvarStrList { "Corners", "ui/hud-hm.txt",  "NinetySix", "ui/hud-retro.txt", "Low", "ui/hud-low.txt", "Simple", "ui/hud-simple.txt" }	
+	cvarStrList { "Corners", "ui/hud-hm.txt",  "Default", "ui/hud.txt", "Test '98", "ui/hud-98.txt", "S. Same", "ui/hud-same.txt" }	// huds that aren't finished will be left out.
 	background MP_FATBUTTONBG
 	backcolor MP_BUTTONBGCOLOR
 	style 1
@@ -161,6 +161,139 @@ itemDef {
 }
 
 
+itemDef {
+      	name fraglimt
+      	text "Crosshair"
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	//ownerdraw UI_CROSSHAIR
+	style 1
+	textstyle 6
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+   	rect 32 200 192 20
+     	textalignx	12	
+	textaligny	 17
+	decoration
+	forecolor MP_TEXTCOLOR
+	visible 1 
+}
+
+itemDef {
+      	name fraglimt
+	ownerdraw UI_CROSSHAIR
+	style 1
+	textstyle 0
+
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+   	rect 192 220 32 32
+     	textalignx	12	
+	textaligny	 17
+
+	forecolor 1 1 1 1
+	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIR fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+}
+
+itemDef 
+      {
+        name effectsvol
+        type ITEM_TYPE_SLIDER
+        text "Crosshair Size"
+        cvarfloat "cg_crosshairSize" 1 8 64
+        rect 32 240 192 20
+        textalign ITEM_ALIGN_LEFT
+        textalignx 0
+        textaligny 16
+        textscale 0.3
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+	forecolor 1 1 1 1
+        visible MENU_TRUE
+
+}
+
+itemDef {
+      	name fraglimt
+      	text "Crosshair Coloring"
+	type ITEM_TYPE_MULTI
+	cvar "cg_crosshairHealth"
+	cvarFloatList { "RGB" 0 "Health" 1}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+   	rect 32 260 192 20
+     	textalignx	12	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIRHEALTH; fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+}
+
+
+
+itemDef 
+      {
+        name effectsvol
+        type ITEM_TYPE_SLIDER
+        text "Crosshair R"
+        cvarfloat "cg_crosshairColorRed" 0.1 0 1
+        rect 32 280 192 20
+        textalign ITEM_ALIGN_LEFT
+        textalignx 0
+        textaligny 16
+        textscale 0.3
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+	forecolor 1 1 1 1
+        visible MENU_TRUE
+}
+
+itemDef 
+      {
+        name effectsvol
+        type ITEM_TYPE_SLIDER
+        text "Crosshair G"
+        cvarfloat "cg_crosshairColorGreen" 0.1 0 1
+        rect 32 300 192 20
+        textalign ITEM_ALIGN_LEFT
+        textalignx 0
+        textaligny 16
+        textscale 0.3
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+	forecolor 1 1 1 1
+        visible MENU_TRUE
+}
+
+itemDef 
+      {
+        name effectsvol
+        type ITEM_TYPE_SLIDER
+        text "Crosshair B"
+        cvarfloat "cg_crosshairColorBlue" 0.1 0 1
+        rect 32 320 192 20
+        textalign ITEM_ALIGN_LEFT
+        textalignx 0
+        textaligny 16
+        textscale 0.3
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+	forecolor 1 1 1 1
+        visible MENU_TRUE
+}
+
+
+
+
 
 itemDef {
       	name videofield
@@ -188,7 +321,7 @@ itemDef {
       	text "Particle System"
 	type ITEM_TYPE_MULTI
 	cvar "cg_leiEnhancement"
-	cvarFloatList { "Simple" 0 "OA0" 1 "OA3" 2000 "ninetysix" 1996}	
+	cvarFloatList { "Classic" 0 "New" 1}	
 	background MP_FATBUTTONBG
 	backcolor MP_BUTTONBGCOLOR
 	style 1
@@ -323,6 +456,102 @@ itemDef {
 	visible 1 
 }
 
+itemDef {
+      	name fraglimt
+      	text "Icons Style"
+	type ITEM_TYPE_MULTI
+	cvar "cg_draw3DIcons"
+	cvarFloatList { "Models" 1 "Icons" 0}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+  	textalign ITEM_ALIGN_RIGHT
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+   	rect 324 200 192 20
+     	textalignx	128	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_PREFS_3DICONS fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+}
+
+
+itemDef {
+      	name fraglimt
+      	text "Identify Players"
+	type ITEM_TYPE_MULTI
+	cvar "cg_drawCrosshairNames"
+	cvarFloatList { "Disabled" 0 "Enabled" 1}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+  	textalign ITEM_ALIGN_RIGHT
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+   	rect 324 220 192 20
+     	textalignx	128	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIRNAMES fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+}
+
+
+
+itemDef {
+      	name fraglimt
+      	text "Draw Attacker"
+	type ITEM_TYPE_MULTI
+	cvar "cg_drawAttacker"
+	cvarFloatList { "Disabled" 0 "Enabled" 1}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+  	textalign ITEM_ALIGN_RIGHT
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+   	rect 324 240 192 20
+     	textalignx	128	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIRNAMES fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+}
+
+
+itemDef {
+      	name fraglimt
+      	text "Draw Teammate Markers"
+	type ITEM_TYPE_MULTI
+	cvar "cg_drawFriend"
+	cvarFloatList { "Disabled" 0 "Enabled" 1}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+  	textalign ITEM_ALIGN_RIGHT
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+   	rect 324 260 192 20
+     	textalignx	128	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIRNAMES fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+}
+
 
 
 /*
@@ -354,7 +583,7 @@ itemDef {
 
 itemDef {
       	name videofield
-	text	"Video"
+	//text	"Video" // redundant with tabs
 	background MP_DIALOGBG
 	backcolor 	MP_DIALOGBGCOLOR
 	style 1
@@ -689,7 +918,7 @@ itemDef
 
 itemDef {
       	name videofield
-	text	"Advanced Video"
+	//text	"Advanced Video" // sort of redundant
 	background MP_DIALOGBG
 	backcolor 	MP_DIALOGBGCOLOR
 	style 1
@@ -1400,7 +1629,7 @@ itemDef {
 
 itemDef {
       	name mapsfield
-	text	"Sound"
+	//text	"Sound"
 	background MP_DIALOGBG
 	backcolor 	MP_DIALOGBGCOLOR
 	style 1
@@ -1674,7 +1903,7 @@ itemDef {
 
 itemDef {
       	name mapsfield
-	text	"Other"
+	//text	"Other"
 	background MP_DIALOGBG
 	backcolor 	MP_DIALOGBGCOLOR
 	style 1
@@ -1819,8 +2048,8 @@ itemDef {
 
 itemDef {
       	name tab1
-      	text "Controls"
-	background "azuretablong"
+      	text "Options"
+	background MP_TABOFF
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
@@ -1832,7 +2061,7 @@ itemDef {
 	textaligny	 16
 	forecolor MP_TEXTCOLOR
 
-
+	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 0;  play MP_SND_SELECT;   }
 	visible 1 
 }
@@ -1840,7 +2069,7 @@ itemDef {
 itemDef {
       	name tab2
       	text "Video"
-	background "azuretablong"
+	background MP_TABOFF
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
@@ -1851,7 +2080,7 @@ itemDef {
      	textalignx	 16	
 	textaligny	 16
 	forecolor MP_TEXTCOLOR
-
+	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 1;  play MP_SND_SELECT;  }
 	visible 1 
 }
@@ -1859,7 +2088,7 @@ itemDef {
 itemDef {
       	name tab3
       	text "Audio"
-	background "azuretablong"
+	background MP_TABOFF
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
@@ -1870,7 +2099,7 @@ itemDef {
      	textalignx	 16	
 	textaligny	 16
 	forecolor MP_TEXTCOLOR
-
+	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 2;  play MP_SND_SELECT;  }
 	visible 1 
 }
@@ -1878,7 +2107,7 @@ itemDef {
 itemDef {
       	name tab4
       	text "Other"
-	background "azuretablong"
+	background MP_TABOFF
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
@@ -1889,7 +2118,7 @@ itemDef {
      	textalignx	 16	
 	textaligny	 16
 	forecolor MP_TEXTCOLOR
-
+	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 3;  play MP_SND_SELECT;  }
 	visible 1 
 }
@@ -1907,8 +2136,8 @@ itemDef {
 
 itemDef {
       	name tab1
-      	text "Controls"
-	background "azureuntablong"
+      	text "Options"
+	background MP_TABON
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
@@ -1919,14 +2148,14 @@ itemDef {
      	textalignx	 16	
 	textaligny	 16
 	decoration
-
+	backcolor MP_TABONBGCOLOR
 	visible 1 
 }
 
 itemDef {
       	name tab2
       	text "Video"
-	background "azureuntablong"
+	background MP_TABON
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
@@ -1937,14 +2166,14 @@ itemDef {
 	decoration
      	textalignx	 16	
 	textaligny	 16
-
+	backcolor MP_TABONBGCOLOR
 	visible 1 
 }
 
 itemDef {
       	name tab3
       	text "Audio"
-	background "azureuntablong"
+	background MP_TABON
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
@@ -1955,14 +2184,14 @@ itemDef {
 	decoration
      	textalignx	 16	
 	textaligny	 16
-
+	backcolor MP_TABONBGCOLOR
 	visible 1 
 }
 
 itemDef {
       	name tab4
       	text "Other"
-	background "azureuntablong"
+	background MP_TABON
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
@@ -1973,7 +2202,7 @@ itemDef {
 	decoration
      	textalignx	 16	
 	textaligny	 16
-
+	backcolor MP_TABONBGCOLOR
 	visible 1 
 }
 
@@ -1998,5 +2227,4 @@ itemDef {
 	bordercolor   MP_BOX_BORDER
 	visible 1 
 }
-
 

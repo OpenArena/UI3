@@ -6,6 +6,8 @@
 // Designed for controllers really. Apologies if this is "too dumb"
 // but i'd like to make the interface less daunting by default.
 
+#include "ui/common/borders600400.panel"
+
 // -----------------------------------------------------------
 // TAB 0 - CONTROLS
 // -----------------------------------------------------------
@@ -317,77 +319,163 @@ itemDef {
 // TAB X - ALL
 // -----------------------------------------------------------
 
+
 itemDef {
-      	name KeybindMenu
-      	text "Player"
-	type ITEM_TYPE_BUTTON
-	background "ui/assets5/keys_move"
-	backcolor MP_BUTTONBGCOLOR
+      	name tab1
+      	text "Movement"
+	background MP_TABOFF
 	style 1
-	textstyle 6
-      	textscale 0.23
-   	rect 48 80 64 64
-     	textalignx	4
-	textaligny	 64
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.33
+   	rect 16 16 128 16
+	cvarTest "ui_menutab"
+	hideCVar { "0" }
+     	textalignx	 16	
+	textaligny	 16
 	forecolor MP_TEXTCOLOR
-	action { setcvar ui_menutab 0;  play MP_SND_SELECT;  }
-	mouseEnter { setcvar ui_tip TIP_KEYS_PLAYER fadein tooltip; } mouseExit { fadeout tooltip;}  
+
+	backcolor MP_TABOFFBGCOLOR
+	action { setcvar ui_menutab 0;  play MP_SND_SELECT;   }
 	visible 1 
 }
 
-
 itemDef {
-      	name KeybindMenu
+      	name tab2
       	text "Weapons"
-	type ITEM_TYPE_BUTTON
-	background "ui/assets5/keys_weapons"
-	backcolor MP_BUTTONBGCOLOR
+	background MP_TABOFF
 	style 1
-	textstyle 6
-      	textscale 0.23
-   	rect 48 144 64 64
-     	textalignx	4
-	textaligny	 64
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.33
+   	rect 144 16 128 16
+	cvarTest "ui_menutab"
+	hideCVar { "1" }
+     	textalignx	 16	
+	textaligny	 16
 	forecolor MP_TEXTCOLOR
+	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 1;  play MP_SND_SELECT;  }
-	mouseEnter { setcvar ui_tip TIP_KEYS_WEAPONS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
 }
 
 itemDef {
-      	name KeybindMenu
-      	text "Chat"
-	type ITEM_TYPE_BUTTON
-	background "ui/assets5/keys_chat"
-	backcolor MP_BUTTONBGCOLOR
+      	name tab3
+      	text "Communicate"
+	background MP_TABOFF
 	style 1
-	textstyle 6
-      	textscale 0.23
-   	rect 48 208 64 64
-     	textalignx	4
-	textaligny	 64
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.33
+   	rect 272 16 128 16
+	cvarTest "ui_menutab"
+	hideCVar { "2" }
+     	textalignx	 16	
+	textaligny	 16
 	forecolor MP_TEXTCOLOR
+	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 2;  play MP_SND_SELECT;  }
-	mouseEnter { setcvar ui_tip TIP_KEYS_WEAPONS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
 }
+
+itemDef {
+      	name tab4
+      	text "Input"
+	background MP_TABOFF
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.33
+   	rect 400 16 128 16
+	cvarTest "ui_menutab"
+	hideCVar { "3" }
+     	textalignx	 16	
+	textaligny	 16
+	forecolor MP_TEXTCOLOR
+	backcolor MP_TABOFFBGCOLOR
+	action { setcvar ui_menutab 3;  play MP_SND_SELECT;  }
+	visible 1 
+}
+
+
+
+
+
+
+
+
+
+// pressed tabs
 
 
 itemDef {
-      	name KeybindMenu
-      	text "Input"
-	type ITEM_TYPE_BUTTON
-	background "ui/assets5/keys_presets"
-	backcolor MP_BUTTONBGCOLOR
+      	name tab1
+      	text "Movement"
+	background MP_TABON
 	style 1
-	textstyle 6
-      	textscale 0.23
-   	rect 48 272 64 64
-     	textalignx	4
-	textaligny	 64
-	forecolor MP_TEXTCOLOR
-	action { setcvar ui_menutab 3;  play MP_SND_SELECT;  }
-	mouseEnter { setcvar ui_tip TIP_KEYS_WEAPONS fadein tooltip; } mouseExit { fadeout tooltip;}  
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.33
+   	rect 16 16 128 16
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+     	textalignx	 16	
+	textaligny	 16
+	decoration
+	backcolor MP_TABONBGCOLOR
 	visible 1 
 }
 
+itemDef {
+      	name tab2
+      	text "Weapons"
+	background MP_TABON
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.33
+   	rect 144 16 128 16
+	cvarTest "ui_menutab"
+	showCVar { "1" }
+	decoration
+     	textalignx	 16	
+	textaligny	 16
+	backcolor MP_TABONBGCOLOR
+	visible 1 
+}
+
+itemDef {
+      	name tab3
+      	text "Communicate"
+	background MP_TABON
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.33
+   	rect 272 16 128 16
+	cvarTest "ui_menutab"
+	showCVar { "2" }
+	decoration
+     	textalignx	 16	
+	textaligny	 16
+	backcolor MP_TABONBGCOLOR
+	visible 1 
+}
+
+itemDef {
+      	name tab4
+      	text "Input"
+	background MP_TABON
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.33
+   	rect 400 16 128 16
+	cvarTest "ui_menutab"
+	showCVar { "3" }
+	decoration
+     	textalignx	 16	
+	textaligny	 16
+	backcolor MP_TABONBGCOLOR
+	visible 1 
+}

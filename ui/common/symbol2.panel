@@ -42,11 +42,13 @@ itemDef	{
 
 itemDef	{
 	name spinninglogo
-   rect -835 -200 2340 880 // ultra wide screen
+   //rect -835 0 340 480 // ultra wide screen
+	rect 0 0 640 480 // ultra wide screen
+
 	type ITEM_TYPE_MODEL
-	asset_model "models/ui/oalogolow.md3"
-	model_fovx   95
-	model_fovy   13
+	asset_model "ui/assets5/models/oalogolow.md3"
+	model_fovx   54
+	model_fovy   45
 	model_rotation  12
 	model_angle 0 0 0
 	style 0

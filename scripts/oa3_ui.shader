@@ -228,11 +228,11 @@ models/ui/oalogo128
 
 
 	{
-		map models/ui/oalogo128ref.tga
+		map ui/assets5/models/oalogo128ref.tga
 		tcGen environment 
 	}
 	{
-		map models/ui/oalogo128.tga
+		map ui/assets5/models/oalogo128.tga
 		blendFunc blend
 	}
 

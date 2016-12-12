@@ -1,0 +1,89 @@
+
+itemDef {
+      	name buttonhmain1
+      	text "Back to Menu"
+	background MP_LONGBUTTONBG
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect MMENU_OFFSETITEMH 128 512 32
+        textalign MMENU_ALIGNITEM
+     	textalignx	 256	
+	textaligny	 24
+	forecolor MP_TEXTCOLOR
+
+	action	{ 	//close main;
+			close ingamequitmenu;
+			open ingame;
+			play MP_SND_SELECT;  
+	}
+	visible 1 
+	mouseEnter { setcvar ui_tip "Go back to the menu." fadein tooltip;   setbackground MP_LONGBUTTONBGA } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+}
+
+
+
+itemDef {
+      	name buttonhmods
+      	text "Disconnect from server"
+	background MP_LONGBUTTONBG
+
+	action	{ 	play MP_SND_SELECT;  
+			//close main;
+			close mainmenu;
+			close ingame;
+			uiScript "leave";	}
+	style 1
+	type ITEM_TYPE_BUTTON
+	cvarTest "ui_menuOrder"
+	hideCVar { "1" }
+	textstyle 2
+      	textscale 0.5
+   	rect MMENU_OFFSETITEMH 320 512 32
+        textalign MMENU_ALIGNITEM
+     	textalignx	 256	
+	textaligny	 24
+	forecolor MP_TEXTCOLOR
+
+	mouseEnter { setcvar ui_tip "Quit playing and go back to the main menu" fadein tooltip;  setbackground MP_LONGBUTTONBGA  } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+	visible 1 
+}
+
+
+
+itemDef {
+      	name buttonhmain5
+      	text "Quit to System"
+	background MP_LONGBUTTONBG
+
+
+	action	{ 	play MP_SND_SELECT;  
+			close ingame;
+			setcvar ui_menutab "0";
+			play MP_SND_SELECT;  
+			open ingamequitmenu;	
+			}
+
+	action	{ 	play MP_SND_SELECT;  
+			//close main;
+			close mainmenu;
+			close ingame;
+			uiScript "quit";	}
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	cvarTest "ui_menuOrder"
+	hideCVar { "1" }
+	textstyle 2
+      	textscale 0.5
+   	rect MMENU_OFFSETITEMH 352 512 32
+        textalign MMENU_ALIGNITEM
+     	textalignx	 256	
+	textaligny	 24
+	forecolor MP_TEXTCOLOR
+
+	mouseEnter { setcvar ui_tip "Quit the game. =(" fadein tooltip;  setbackground MP_LONGBUTTONBGA  } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+	visible 1 
+}

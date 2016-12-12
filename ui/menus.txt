@@ -1,7 +1,7 @@
 // menu defs
 // 
 {	
-	loadMenu { "ui/console_main.menu" }
+	loadMenu { "ui/main.menu" }
 	loadMenu { "ui/menutest.menu" }
 	loadMenu { "ui/loading.menu" }
 	loadMenu { "ui/main_menu.menu" }

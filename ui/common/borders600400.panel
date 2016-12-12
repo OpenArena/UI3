@@ -1,0 +1,116 @@
+
+// Frame borders
+itemDef {
+      	name fgfx
+	background "ui/assets5/frametl.tga"
+	style 1
+	type 0
+	backcolor  1 1 1 1
+	forecolor 1 1 1 1
+	decoration
+   	rect -16 0 32 32
+	border 0
+	visible 1 
+}
+
+// Frame borders
+itemDef {
+      	name fgfx
+	background "ui/assets5/framet.tga"
+	style 1
+	type 0
+	backcolor  1 1 1 1
+	forecolor 1 1 1 1
+	decoration
+   	rect 16 0 600 32
+	border 0
+	visible 1 
+}
+
+// Frame borders
+itemDef {
+      	name fgfx
+	background "ui/assets5/frametr.tga"
+	style 1
+	type 0
+	backcolor  1 1 1 1
+	forecolor 1 1 1 1
+	decoration
+   	rect 616 0 32 32
+	border 0
+	visible 1 
+}
+
+itemDef {
+      	name fgfx
+	background "ui/assets5/framebl.tga"
+	style 1
+	type 0
+	backcolor  1 1 1 1
+	forecolor 1 1 1 1
+	decoration
+   	rect -16 432 32 32
+	border 0
+	visible 1 
+}
+
+// Frame borders
+itemDef {
+      	name fgfx
+	background "ui/assets5/frameb.tga"
+	style 1
+	type 0
+	backcolor  1 1 1 1
+	forecolor 1 1 1 1
+	decoration
+   	rect 16 432 600 32
+	border 0
+	visible 1 
+}
+
+// Frame borders
+itemDef {
+      	name fgfx
+	background "ui/assets5/framebr.tga"
+	style 1
+	type 0
+	backcolor  1 1 1 1
+	forecolor 1 1 1 1
+	decoration
+   	rect 616 432 32 32
+	border 0
+	visible 1 
+}
+
+
+// Frame borders
+itemDef {
+      	name fgfx
+	background "ui/assets5/framel.tga"
+	style 1
+	type 0
+	backcolor  1 1 1 1
+	forecolor 1 1 1 1
+	decoration
+   	rect -16 32 32 400
+	border 0
+	visible 1 
+}
+
+
+// Frame borders
+itemDef {
+      	name fgfx
+	background "ui/assets5/framer.tga"
+	style 1
+	type 0
+	backcolor  1 1 1 1
+	forecolor 1 1 1 1
+	decoration
+   	rect 616 32 32 400
+	border 0
+	visible 1 
+}
+
+
+
