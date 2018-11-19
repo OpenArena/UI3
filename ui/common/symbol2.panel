@@ -54,8 +54,8 @@ itemDef	{
 	style 0
 	decoration 
 	visible 1
-	cvarTest "ui_no3dbg"
-	hideCVar { "1" }
+	cvarTest "ui_3dsymbol"
+	showCVar { "1" }
 	}
 /*
 

@@ -36,7 +36,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define	BUTTON_DONE				"Done"
 
 
+#define GAMETYPENAME_FFA			"Free for All"
 
+#define KEYNAME_CROUCH				"Crouch"
 
 
 
@@ -95,6 +97,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define TIP_AUDIO_MUSICVOLUME			"Adjust volume of the music."
 #define TIP_AUDIO_VOICEVOLUME			"Volume of real-time voice communication"
 #define TIP_AUDIO_TAUNTS			"Allow voice taunts to be heard."
+#define TIP_AUDIO_OPENAL			"Enable 3D sound. ^3The options below are ignored."
+#define TIP_AUDIO_QUALITY			"Lower or raise the fidelity of the audio."
+#define TIP_AUDIO_DEPTH				"Reduce the output quality of the sounds"
+#define TIP_AUDIO_SAMPLEFORMAT			"Format to load sound effects as. ^14-bit is slower, but saves memory"
 
 #define TIP_OTHER_COMBLOOD			"Allows blood and gore"
 #define TIP_OTHER_SUGGESTIVETHEMES		"Reduces suggestive content, like cleavage"

@@ -21,6 +21,7 @@ itemDef {
 	}
 	visible 1 
 	mouseEnter { setcvar ui_tip "Go back to the menu." fadein tooltip;   setbackground MP_LONGBUTTONBGA } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -49,6 +50,7 @@ itemDef {
 
 	mouseEnter { setcvar ui_tip "Quit playing and go back to the main menu" fadein tooltip;  setbackground MP_LONGBUTTONBGA  } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -86,4 +88,5 @@ itemDef {
 
 	mouseEnter { setcvar ui_tip "Quit the game. =(" fadein tooltip;  setbackground MP_LONGBUTTONBGA  } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }

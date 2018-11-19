@@ -20,7 +20,7 @@ itemDef {
 	type 0
 	textstyle 2
       	textscale 0.5
-	cvarTest "ui_menutab"
+	cvarTest "ui_borders"
 	showCVar { "0" }
 	decoration
    	rect 16 32 600 400
@@ -29,6 +29,8 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
 }
 
 itemDef {
@@ -49,6 +51,8 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
 }
 
 
@@ -74,6 +78,8 @@ itemDef {
 
 	mouseEnter { setcvar ui_tip TIP_OPTIONS_DRAWGUN fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
 }
 
 itemDef {
@@ -81,7 +87,7 @@ itemDef {
       	text "Gun Bobbing"
 	type ITEM_TYPE_MULTI
 	cvar "cg_bobmodel"
-	cvarFloatList { "Normal" 0 "Arc" 1 "Thrust" 2}	
+	cvarFloatList { "Normal" 0 "Arc" 1 "Thrust" 2 "Figure 8" 3 "Off" -1}	
 	background MP_FATBUTTONBG
 	backcolor MP_BUTTONBGCOLOR
 	style 1
@@ -96,8 +102,32 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_OPTIONS_BOBMODEL fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
-}
+	hexcolor 0 1 2 3	// color schemes
 
+}
+itemDef {
+      	name fraglimt
+      	text "View Bobbing"
+	type ITEM_TYPE_MULTI
+	cvar "cg_bob"
+	cvarFloatList { "Off" 0 "Default" 1 "No Roll" 2 "No Pitch" 3 "No Pitch/Roll" 4 "Fake 99" 6}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+   	rect 32 120 192 20
+     	textalignx	12	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_OPTIONS_BOBMODEL fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+}
 itemDef 
       {
         name effectsvol
@@ -113,6 +143,8 @@ itemDef
 	showCVar { "0" }
 	forecolor 1 1 1 1
         visible MENU_TRUE
+	hexcolor 0 1 2 3	// color schemes
+
 }
 
 itemDef {
@@ -135,6 +167,8 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_TEXTUREBITS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
 }
 
 
@@ -158,6 +192,8 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_TEXTUREBITS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
 }
 
 
@@ -178,6 +214,8 @@ itemDef {
 	decoration
 	forecolor MP_TEXTCOLOR
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
 }
 
 itemDef {
@@ -196,6 +234,9 @@ itemDef {
 	forecolor 1 1 1 1
 	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIR fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 itemDef 
@@ -213,6 +254,8 @@ itemDef
 	showCVar { "0" }
 	forecolor 1 1 1 1
         visible MENU_TRUE
+	hexcolor 0 1 2 3	// color schemes
+
 
 }
 
@@ -236,6 +279,8 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIRHEALTH; fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
 }
 
 
@@ -255,6 +300,9 @@ itemDef
 	showCVar { "0" }
 	forecolor 1 1 1 1
         visible MENU_TRUE
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 itemDef 
@@ -272,6 +320,8 @@ itemDef
 	showCVar { "0" }
 	forecolor 1 1 1 1
         visible MENU_TRUE
+	hexcolor 0 1 2 3	// color schemes
+
 }
 
 itemDef 
@@ -289,6 +339,9 @@ itemDef
 	showCVar { "0" }
 	forecolor 1 1 1 1
         visible MENU_TRUE
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 
@@ -313,6 +366,9 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 
@@ -337,6 +393,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_PARTICLES fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 itemDef {
@@ -360,6 +419,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_NOTRAILS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 itemDef {
@@ -383,6 +445,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_BRASSTIME fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 itemDef {
@@ -406,6 +471,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_OLDRAIL fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 
@@ -431,6 +499,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_MARKS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 itemDef {
@@ -454,6 +525,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_SIMPLEITEMS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 itemDef {
@@ -477,6 +551,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_3DICONS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 
@@ -501,6 +578,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIRNAMES fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 
@@ -526,6 +606,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIRNAMES fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
 
@@ -550,8 +633,37 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_PREFS_CROSSHAIRNAMES fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
+
+itemDef {
+      	name fraglimt
+      	text "Muzzleflash Style"
+	type ITEM_TYPE_MULTI
+	cvar "cg_muzzleflashStyle"
+	cvarFloatList { "None" 0 "Default" 1 "96" 2 "Fake '99" 3 "64" 4 "Anime" 5 "Fake2003" 6}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+  	textalign ITEM_ALIGN_RIGHT
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+   	rect 324 280 192 20
+     	textalignx	128	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_PREFS_MUZZLEFLASHSTYLE fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
+}
 
 
 /*
@@ -573,6 +685,9 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	decoration
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 */
 
@@ -580,7 +695,7 @@ itemDef {
 // -----------------------------------------------------------
 // TAB 1 - Video
 // -----------------------------------------------------------
-
+/*
 itemDef {
       	name videofield
 	//text	"Video" // redundant with tabs
@@ -599,18 +714,52 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+
+
 }
 
-
+*/
 // TODO: Make combobox for ADVANCED INTERFACE mode?
 itemDef {
       	name fraglimt
       	text "Resolution   "
 	type ITEM_TYPE_MULTI
 	cvar "r_mode"
-
-	// TODO: All the modes!!!
-	cvarFloatList { "320*240" 0 "400*300" 1 "512*384" 2 "640*480" 3 "800*600" 4 "960*720" 5 "1024*768" 6 "1152*864" 7 "1280*1024" 8 "1600*1200" 9 "2048*1536" 10 "856*480" 11 "Custom" -1 "Desktop" -2 }
+	// Sorted by width.
+	// TODO: List Aspect?
+	cvarFloatList { 
+//			"320x240" 0 
+//			"400x300" 1 
+			"512x384" 2 
+			"640x480" 3 
+			"800x600" 4 
+			"960x720" 5 
+			"1024x768" 6 
+			"1152x864" 7 
+		//	"856x480" 11 
+			"1280x720" 12
+			"1280x768" 13
+			"1280x800" 14
+			"1280x960" 15
+			"1280x1024" 8 
+			"1360x768" 16
+			"1366x768" 17
+			"1360x1024" 18
+			"1400x900" 20
+			"1400x1050" 19
+			"1600x900" 21
+			"1600x1200" 9 
+			"1680x1050" 22
+			"1920x1080" 23
+			"1920x1200" 24
+			"1920x1440" 25
+			"2048x1536" 10 
+			"2560x1600" 26
+			"3840x2160" 27
+			"Custom" -1 
+			"Desktop" -2 
+	}
 	background MP_FATBUTTONBG
 	backcolor MP_BUTTONBGCOLOR
 	style 1
@@ -624,6 +773,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_RESOLUTION fadein tooltip; } mouseExit { fadeout tooltip;} 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 
 }
 
@@ -631,7 +781,7 @@ itemDef {
       	name fraglimt
       	text "Full Screen"
 	type ITEM_TYPE_CHECKBOX
-	cvar "r_fullscreen"
+	cvar "r_uiFullscreen"
 	background MP_FATBUTTONBG
 	backcolor MP_BUTTONBGCOLOR
 	style 1
@@ -646,7 +796,10 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_WINDOWED fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
+
+
 	
 itemDef {
       	name fraglimt
@@ -667,6 +820,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_COLORBITS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -688,6 +842,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_COLORBITS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -709,6 +864,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_FILTER; fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -731,7 +887,51 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_SHADER fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
+
+itemDef 
+{
+        name gamma
+        type ITEM_TYPE_SLIDER
+        text "Brightness (Gamma)"
+        cvarfloat "r_gamma" 4 0.5 2
+        rect 32 260 192 20
+        textalign ITEM_ALIGN_LEFT
+        textalignx 0
+        textaligny 16
+        textscale 0.3
+	cvarTest "ui_menutab"
+	showCVar { "1" }
+	mouseEnter { setcvar ui_tip TIP_VIDEO_BRIGHTNESS fadein tooltip; } mouseExit { fadeout tooltip;}  
+	forecolor 1 1 1 1
+        visible MENU_TRUE
+	hexcolor 0 1 2 3	// color schemes
+
+}
+
+itemDef 
+{
+        name gammadefaultdot
+        text "|"
+        rect 198 288 192 20
+        textalign ITEM_ALIGN_LEFT
+        textalignx 0
+        textaligny 0
+        textscale 0.3
+	cvarTest "ui_menutab"
+	showCVar { "1" }
+	forecolor 1 1 1 1
+	action { setcvar r_gamma 1; }
+	mouseEnter { setcvar ui_tip TIP_VIDEO_BRIGHTNESS_DEFAULT fadein tooltip; } mouseExit { fadeout tooltip;}  
+        visible MENU_TRUE
+	hexcolor 0 1 2 3	// color schemes
+}
+
+
+
+// Second Column
+// todo: Remove? Move to detail subpage?
 
 itemDef {
       	name fraglimt
@@ -752,6 +952,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_LODBIAS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -773,6 +974,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_LODBIAS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -794,7 +996,31 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_PICMIP fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
+
+itemDef {
+      	name fraglimt
+      	text "Texture Mip Curve"
+	type ITEM_TYPE_MULTI
+	cvar "r_textureLod"
+	cvarFloatList { "Normal" 0 "Sharp" 1.5 "Sharper" 2.5 "Blurry" -1}
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+      	textscale 0.333
+	cvarTest "ui_menutab"
+	showCVar { "1" }
+   	rect 332 160 256 32
+     	textalignx	32	
+	textaligny	 26
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_VIDEO_TEXLOD fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+}
+
 
 
 
@@ -814,9 +1040,10 @@ itemDef {
 	textaligny	 26
 	forecolor MP_TEXTCOLOR
 	backcolor MP_BUTTONBGCOLOR
-	mouseEnter { setcvar ui_tip "Open advanced video settings"; fadein tooltip; } mouseExit { fadeout tooltip;}  
+	mouseEnter { setcvar ui_tip TIP_VIDEO_ADVANCED fadein tooltip; } mouseExit { fadeout tooltip;}  
 	action { setcvar ui_menutab 11;  play MP_SND_SELECT;  }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -836,9 +1063,10 @@ itemDef {
 	textaligny	 26
 	forecolor MP_TEXTCOLOR
 	backcolor MP_BUTTONBGCOLOR
-	mouseEnter { setcvar ui_tip "Quickly turn off the heavy options"; fadein tooltip; } mouseExit { fadeout tooltip;}  
+	mouseEnter { setcvar ui_tip TIP_VIDEO_PANIC fadein tooltip; } mouseExit { fadeout tooltip;}  
 	action { setcvar ui_menutab 12;  play MP_SND_SELECT;  }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -866,6 +1094,7 @@ itemDef {
      		}
 	mouseEnter { setcvar ui_tip TIP_VIDEO_APPLY fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -891,6 +1120,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef
@@ -908,6 +1138,7 @@ itemDef
         visible MENU_TRUE
         decoration
         style WINDOW_STYLE_FILLED
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -915,7 +1146,7 @@ itemDef
 // -----------------------------------------------------------
 // TAB 1 - Video
 // -----------------------------------------------------------
-
+/*
 itemDef {
       	name videofield
 	//text	"Advanced Video" // sort of redundant
@@ -934,7 +1165,9 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
+*/
 
 
 itemDef {
@@ -955,6 +1188,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -962,7 +1196,10 @@ itemDef {
       	text "Map"
 	type ITEM_TYPE_MULTI
 	cvar "r_flares"
-	cvarFloatList { "Off" 0 "Normal" 1 "Hexagons" 2 "Balls" 3 "Anime" 4 "Retro" 5 "Retro 2" 6 "Classic" 7 "Modern" 8 }
+	//cvarFloatList { "Off" 0 "Normal" 1 "Hexagons" 2 "Balls" 3 "Anime" 4 "Retro" 5 "Retro 2" 6 "Classic" 7 "Modern" 8 }
+	// Sensible voices
+	cvarFloatList { "Off" 0 "Normal" 1 "Hexagons" 2 "Modern" 8 }
+
 	background MP_FATBUTTONBG
 	backcolor MP_BUTTONBGCOLOR
 	style 1
@@ -978,6 +1215,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_FLARES fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -985,7 +1223,9 @@ itemDef {
       	text "Dyn Lights"
 	type ITEM_TYPE_MULTI
 	cvar "r_flaresDlight"
-	cvarFloatList { "Off" 0 "Normal" 1 "Hexagons" 2 "Balls" 3 "Anime" 4 "Retro" 5 "Retro 2" 6 "Classic" 7 "Modern" 8 }
+//	cvarFloatList { "Off" 0 "Normal" 1 "Hexagons" 2 "Balls" 3 "Anime" 4 "Retro" 5 "Retro 2" 6 "Classic" 7 "Modern" 8 }
+	// Sensible voices
+	cvarFloatList { "Off" 0 "Normal" 1 "Hexagons" 2 "Lens" 5 "Modern" 8 }
 	background MP_FATBUTTONBG
 	backcolor MP_BUTTONBGCOLOR
 	style 1
@@ -1000,6 +1240,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_FLAREDLIGHT fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1023,6 +1264,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_FLAREMETHOD fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1046,6 +1288,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_FLAREQUALITY fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1069,6 +1312,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 itemDef {
       	name fraglimt
@@ -1091,6 +1335,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_DETAILTEXTURES fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1114,6 +1359,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_DETAILTEXTURELAYERS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1137,6 +1383,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_DETAILTEXTURESCALE fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1160,6 +1407,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_TEXTUREBITS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1183,6 +1431,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_ANISOTROPY fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1206,6 +1455,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_SIMPLEMIPMAPS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1229,6 +1479,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_ROUNDIMAGESDOWN fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1252,6 +1503,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_COMPRESSEDTEXTURES fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1280,6 +1532,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1303,6 +1556,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_BLOOM fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1326,6 +1580,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_RETROAA fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1351,6 +1606,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_NTSC fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 //
 // Column 3
@@ -1373,6 +1629,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1397,6 +1654,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_MONOLIGHTMAP fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1421,6 +1679,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_VERTEX fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1444,6 +1703,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_MODELSHADER fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1468,38 +1728,13 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_VIDEO_SHADOWS fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
-
-
-itemDef {
-      	name fraglimt
-      	text "Map Lighting"
-	type ITEM_TYPE_MULTI
-	cvar "r_mapoverbrightBits"
-	cvarFloatList { "Darker" 1 "Normal" 2  "Brighter" 3}
-	background MP_FATBUTTONBG
-	backcolor MP_BUTTONBGCOLOR
-	style 1
-  textalign ITEM_ALIGN_RIGHT
-	textstyle 6
-      	textscale 0.27
-	cvarTest "ui_menutab"
-	showCVar { "11" }
-   	rect 416 160 192 20
-     	textalignx 128	
-	textaligny	 17
-
-	forecolor MP_TEXTCOLOR
-	mouseEnter { setcvar ui_tip TIP_VIDEO_MAPOVERBRIGHTBITS fadein tooltip; } mouseExit { fadeout tooltip;}  
-	visible 1 
-}
-
-
 
 // -----------------------------------------------------------
 // TAB 1 - Video
 // -----------------------------------------------------------
-
+/*
 itemDef {
       	name videofield
 	text	"Performance Panic!"
@@ -1518,8 +1753,9 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
-
+*/
 
 itemDef {
       	name yeah
@@ -1536,6 +1772,7 @@ itemDef {
      	textalignx	 32	
 	textaligny	 24
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1554,6 +1791,7 @@ itemDef {
      	textalignx	 32	
 	textaligny	 24
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1611,6 +1849,7 @@ itemDef {
 		// Sound
 		setcvar s_khz 22
 		setcvar s_useOpenAL 0
+		setcvar s_compression 0
 
 		// v1.30 Cgame Effects
 		setcvar cg_oldRocket 1
@@ -1619,14 +1858,15 @@ itemDef {
 
 		exec "snd_restart";
      		}
-	mouseEnter { setcvar ui_tip "Set the new settings now and restart" fadein tooltip; } mouseExit { fadeout tooltip;}  
+	mouseEnter { setcvar ui_tip TIP_VIDEO_APPLYPANIC fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 // -----------------------------------------------------------
 // TAB 2 - Audio
 // -----------------------------------------------------------
-
+/*
 itemDef {
       	name mapsfield
 	//text	"Sound"
@@ -1645,9 +1885,10 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 
 }
-
+*/
 
 itemDef 
       {
@@ -1664,6 +1905,7 @@ itemDef
 	showCVar { "2" }
 	forecolor 1 1 1 1
         visible MENU_TRUE
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef 
@@ -1682,6 +1924,7 @@ itemDef
 	showCVar { "2" }
 	forecolor 1 1 1 1
         visible MENU_TRUE
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1703,6 +1946,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1724,6 +1968,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1735,7 +1980,7 @@ itemDef {
 	backcolor MP_BUTTONBGCOLOR
 	style 1
 	textstyle 6
-  textalign ITEM_ALIGN_RIGHT
+  	textalign ITEM_ALIGN_RIGHT
       	textscale 0.255
 	cvarTest "ui_menutab"
 	showCVar { "2" }
@@ -1746,8 +1991,36 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_AUDIO_OPENAL fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 	
+	
+itemDef {
+      	name fraglimt
+      	text "Mixing Depth"
+	type ITEM_TYPE_MULTI
+	cvar "s_sdlBits"
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+  	textalign ITEM_ALIGN_RIGHT
+	cvarFloatList { "16-bit" 16  "8-bit" 8 }	
+	style 1
+	textstyle 6
+      	textscale 0.255
+	cvarTest "ui_menutab"
+	showCVar { "2" }
+
+
+   	rect 64 260 192 20
+     	textalignx	129	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_AUDIO_DEPTH fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+}
+
 itemDef {
       	name fraglimt
       	text "Sound Quality"
@@ -1771,6 +2044,59 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_AUDIO_QUALITY fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+}
+
+itemDef {
+      	name fraglimt
+      	text "Sample Format"
+	type ITEM_TYPE_MULTI
+	cvar "s_compression"
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+  	textalign ITEM_ALIGN_RIGHT
+	cvarFloatList { "16-bit" 0  "4-bit" 2 }	// 8-bit not supported at this time
+	style 1
+	textstyle 6
+      	textscale 0.255
+	cvarTest "ui_menutab"
+	showCVar { "2" }
+
+
+   	rect 64 300 192 20
+     	textalignx	129	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_AUDIO_SAMPLEFORMAT fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+}
+
+itemDef {
+      	name fraglimt
+      	text "Doppler Effect"
+	type ITEM_TYPE_MULTI
+	cvar "s_doppler"
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+  	textalign ITEM_ALIGN_RIGHT
+	cvarFloatList { "Off" 0  "On" 1 }	// FIXME: DIsable this when OpenAL is enabled, or implement doppler in OpenAL somehow?
+	style 1
+	textstyle 6
+      	textscale 0.255
+	cvarTest "ui_menutab"
+	showCVar { "2" }
+
+
+   	rect 64 320 192 20
+     	textalignx	129	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_AUDIO_DOPPLER fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 	
 
@@ -1792,7 +2118,10 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
+
+
 itemDef {
       	name fraglimt
       	text "Chat Beep"
@@ -1816,6 +2145,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_AUDIO_CHATBEEP fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -1841,6 +2171,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_AUDIO_TEAMCHATBEEP fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 	
 itemDef {
@@ -1864,8 +2195,9 @@ itemDef {
 	textaligny	 17
 
 	forecolor MP_TEXTCOLOR
-	mouseEnter { setcvar ui_tip TIP_AUDIO_QUALITY fadein tooltip; } mouseExit { fadeout tooltip;}  
+	mouseEnter { setcvar ui_tip TIP_AUDIO_TEAMVOICEONLY fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 	
@@ -1890,8 +2222,9 @@ itemDef {
 	textaligny	 17
 
 	forecolor MP_TEXTCOLOR
-	mouseEnter { setcvar ui_tip TIP_AUDIO_QUALITY fadein tooltip; } mouseExit { fadeout tooltip;}  
+	mouseEnter { setcvar ui_tip TIP_AUDIO_NOTAUNT fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1900,7 +2233,7 @@ itemDef {
 // -----------------------------------------------------------
 // TAB 3 - Other
 // -----------------------------------------------------------
-
+/*
 itemDef {
       	name mapsfield
 	//text	"Other"
@@ -1919,8 +2252,9 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
-
+*/
 
 
 itemDef {
@@ -1941,6 +2275,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1963,8 +2298,9 @@ itemDef {
 	textaligny	 17
 
 	forecolor MP_TEXTCOLOR
-	mouseEnter { setcvar ui_tip TIP_OTHER_COMBLOOD fadein tooltip; } mouseExit { fadeout tooltip;}  
+	mouseEnter { setcvar ui_tip TIP_OTHER_RATE fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -1988,6 +2324,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -2012,6 +2349,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_OTHER_COMBLOOD fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -2019,7 +2357,7 @@ itemDef {
       	text "Attire"
 	type ITEM_TYPE_MULTI
 	cvar "r_suggestiveThemes"
-	cvarFloatList { "Tame" 0 "Sexy" 1 "^1Lewd" 2 }
+	cvarFloatList { "Tame" 0 "Sexy" 1 }
 	background MP_FATBUTTONBG
 	backcolor MP_BUTTONBGCOLOR
 	style 1
@@ -2035,6 +2373,107 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip TIP_OTHER_SUGGESTIVETHEMES fadein tooltip; } mouseExit { fadeout tooltip;}  
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+}
+
+
+
+itemDef {
+      	name videofield
+	text	"Interface"
+	background MP_DIALOGBG
+	backcolor 	MP_DIALOGBGCOLOR
+	style 1
+	type 0
+	textstyle 2
+      	textscale 0.33
+	cvarTest "ui_menutab"
+	showCVar { "3" }
+	decoration
+   	rect 324 260 0 0
+     	textalignx	 32	
+	textaligny	 15
+	border 1
+	bordercolor   MP_BOX_BORDER
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+}
+
+itemDef {
+      	name fraglimt
+      	text "Menu Colors"
+	type ITEM_TYPE_MULTI
+	cvar "ui_colors"
+	cvarStrList { 
+		"Azure", 	"0x40486c 0x3cb2ee 0x000014 0x3e3e3e", 
+		"Prototype", 	"0x1e3072 0x7286d0 0x1fd1b2 0x606060", 
+		"Strange", 	"0xAAA 0xFFF 0xF0000F 0xb0f0c0",
+		"Greys", 	"0x575757 0xFFFFFF 0x101010 0x070707",
+		"Same", 	"0x005200 0x00ff00 0x004c00 0x001000"
+	}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+  	textalign ITEM_ALIGN_RIGHT
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "3" }
+   	rect 324 280 192 20
+     	textalignx	128	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_OTHER_MENUCOLOR fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+}
+
+itemDef {
+      	name fraglimt
+      	text "Show Context Help"
+	type ITEM_TYPE_MULTI
+	cvar "ui_hidehelp"
+	cvarFloatList { "Yes" 0 "No" 1}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+  	textalign ITEM_ALIGN_RIGHT
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "3" }
+   	rect 324 300 192 20
+     	textalignx	128	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_OTHER_CONTEXT fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
+}
+itemDef {
+      	name fraglimt
+      	text "Draw Borders"
+	type ITEM_TYPE_MULTI
+	cvar "ui_borders"
+	cvarFloatList { "Yes" 0 "No" 1}	
+	background MP_FATBUTTONBG
+	backcolor MP_BUTTONBGCOLOR
+	style 1
+	textstyle 6
+  	textalign ITEM_ALIGN_RIGHT
+      	textscale 0.27
+	cvarTest "ui_menutab"
+	showCVar { "3" }
+   	rect 324 320 192 20
+     	textalignx	128	
+	textaligny	 17
+
+	forecolor MP_TEXTCOLOR
+	mouseEnter { setcvar ui_tip TIP_OTHER_CONTEXT fadein tooltip; } mouseExit { fadeout tooltip;}  
+	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -2053,17 +2492,18 @@ itemDef {
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
-      	textscale 0.33
-   	rect 16 16 128 16
+      	textscale 0.30
+   	rect 16 TABPOSY 128 16
 	cvarTest "ui_menutab"
 	hideCVar { "0" }
      	textalignx	 16	
-	textaligny	 16
+	textaligny	 12
 	forecolor MP_TEXTCOLOR
 
 	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 0;  play MP_SND_SELECT;   }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -2073,16 +2513,17 @@ itemDef {
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
-      	textscale 0.33
-   	rect 144 16 128 16
+      	textscale 0.30
+   	rect 144 TABPOSY 128 16
 	cvarTest "ui_menutab"
 	hideCVar { "1" }
      	textalignx	 16	
-	textaligny	 16
+	textaligny	 12
 	forecolor MP_TEXTCOLOR
 	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 1;  play MP_SND_SELECT;  }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -2092,16 +2533,17 @@ itemDef {
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
-      	textscale 0.33
-   	rect 272 16 128 16
+      	textscale 0.30
+   	rect 272 TABPOSY 128 16
 	cvarTest "ui_menutab"
 	hideCVar { "2" }
      	textalignx	 16	
-	textaligny	 16
+	textaligny	 12
 	forecolor MP_TEXTCOLOR
 	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 2;  play MP_SND_SELECT;  }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -2111,16 +2553,17 @@ itemDef {
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
-      	textscale 0.33
-   	rect 400 16 128 16
+      	textscale 0.30
+   	rect 400 TABPOSY 128 16
 	cvarTest "ui_menutab"
 	hideCVar { "3" }
      	textalignx	 16	
-	textaligny	 16
+	textaligny	 12
 	forecolor MP_TEXTCOLOR
 	backcolor MP_TABOFFBGCOLOR
 	action { setcvar ui_menutab 3;  play MP_SND_SELECT;  }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -2141,8 +2584,8 @@ itemDef {
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
-      	textscale 0.33
-   	rect 16 16 128 16
+      	textscale 0.30
+   	rect 16 TABPOSY 128 16
 	cvarTest "ui_menutab"
 	showCVar { "0" }
      	textalignx	 16	
@@ -2150,6 +2593,7 @@ itemDef {
 	decoration
 	backcolor MP_TABONBGCOLOR
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -2159,8 +2603,8 @@ itemDef {
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
-      	textscale 0.33
-   	rect 144 16 128 16
+      	textscale 0.30
+   	rect 144 TABPOSY 128 16
 	cvarTest "ui_menutab"
 	showCVar { "1" }
 	decoration
@@ -2168,6 +2612,7 @@ itemDef {
 	textaligny	 16
 	backcolor MP_TABONBGCOLOR
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -2177,8 +2622,8 @@ itemDef {
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
-      	textscale 0.33
-   	rect 272 16 128 16
+      	textscale 0.30
+   	rect 272 TABPOSY 128 16
 	cvarTest "ui_menutab"
 	showCVar { "2" }
 	decoration
@@ -2186,6 +2631,7 @@ itemDef {
 	textaligny	 16
 	backcolor MP_TABONBGCOLOR
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -2195,8 +2641,8 @@ itemDef {
 	style 1
 	type ITEM_TYPE_BUTTON
 	textstyle 2
-      	textscale 0.33
-   	rect 400 16 128 16
+      	textscale 0.30
+   	rect 400 TABPOSY 128 16
 	cvarTest "ui_menutab"
 	showCVar { "3" }
 	decoration
@@ -2204,6 +2650,7 @@ itemDef {
 	textaligny	 16
 	backcolor MP_TABONBGCOLOR
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 // Some people need to be reminded they have a slowness setting turned on

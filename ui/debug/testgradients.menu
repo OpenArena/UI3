@@ -1,0 +1,397 @@
+/*
+===========================================================================
+Copyright (C) 2007 Open Arena Team
+
+This file is part of Open Arena.
+
+Open Arena is free software; you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+
+Open Arena is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+===========================================================================
+*/
+
+#include "ui/menudef.h"
+#define	GOBACKTOMAIN  "mainmenu"
+{
+  assetGlobalDef {
+    	smallFont "gfx/2d/bigchars" 12
+    	font "gfx/2d/bigchars" 16				
+    	bigFont "gfx/2d/bigchars" 48
+	cursor "ui/assets/cursor"			
+	itemFocusSound MP_SND_HOVER		
+	shadowColor 0.0 0.0 0.0 0.25	
+    	fadeClamp 1.0	
+	fadeCycle 1	
+	fadeAmount 0.1
+  	}
+	
+
+menuDef {
+    	name "gradienttest"
+	background MP_BACKGROUND1
+    	fullScreen 1				
+	rect 0 0 853 480
+    	visible MENU_TRUE
+    	forecolor MP_FOCUSCOLOR			
+	focuscolor MP_TEXTCOLOR
+				
+	onOpen { //open mainmenu;
+		
+		//close main;
+		}
+
+	
+itemDef {
+      	name button1
+      	text "Back"
+	background "azurebuttonlong"
+	style 1
+	action	{ 	open debug;close gradienttest}
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect 460 420 256 32
+     	textalignx	 32	
+	textaligny	 24
+	forecolor MP_TEXTCOLOR
+
+	visible 1 
+}
+
+
+itemDef {
+      	name explainer
+	text "Color boxes, gradients and patterns"
+	style 1
+	type 0
+	textstyle 2
+      	textscale 0.27
+	autowrapped
+	forecolor 0.4 0.4 0.5 1
+	decoration
+   	rect 32 60 500 130
+     	textalignx	 12	
+	textaligny	 16
+	visible 1 
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 128 32 64 	visible 1 
+	backcolor 0.1 0.1 0.1 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 64 128 32 64 	visible 1 
+	backcolor 0.2 0.2 0.2
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 96 128 32 64 	visible 1 
+	backcolor 0.3 0.3 0.3 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 128 128 32 64 	visible 1 
+	backcolor 0.4 0.4 0.4 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 160 128 32 64 	visible 1 
+	backcolor 0.5 0.5 0.5
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 192 128 32 64 	visible 1 
+	backcolor 0.6 0.6 0.6 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 224 128 32 64 	visible 1 
+	backcolor 0.7 0.7 0.7 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 256 128 32 64 	visible 1 
+	backcolor 0.8 0.8 0.8 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 288 128 32 64 	visible 1 
+	backcolor 0.9 0.9 0.9 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 320 128 32 64 	visible 1 
+	backcolor 1.0 1.0 1.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 144 320 32 	visible 1 
+	backcolor 1.0 1.0 1.0 1
+	background "truegradient2"
+	
+
+}
+
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 208 32 64 	visible 1 
+	backcolor 0.1 0.0 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 64 208 32 64 	visible 1 
+	backcolor 0.2 0.0 0.0
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 96 208 32 64 	visible 1 
+	backcolor 0.3 0.0 0.0
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 128 208 32 64 	visible 1 
+	backcolor 0.4 0.0 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 160 208 32 64 	visible 1 
+	backcolor 0.5 0.0 0.0
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 192 208 32 64 	visible 1 
+	backcolor 0.6 0.0 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 224 208 32 64 	visible 1 
+	backcolor 0.7 0.0 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 256 208 32 64 	visible 1 
+	backcolor 0.8 0.0 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 288 208 32 64 	visible 1 
+	backcolor 0.9 0.0 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 320 208 32 64 	visible 1 
+	backcolor 1.0 0.0 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 224 320 32 	visible 1 
+	backcolor 1.0 0.0 0.0 1
+	background "truegradient2"
+	
+
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 288 32 64 	visible 1 
+	backcolor 0.0 0.1 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 64 288 32 64 	visible 1 
+	backcolor 0.0 0.2 0.0
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 96 288 32 64 	visible 1 
+	backcolor 0.0 0.3 0.0
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 128 288 32 64 	visible 1 
+	backcolor 0.0 0.4 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 160 288 32 64 	visible 1 
+	backcolor 0.0 0.5 0.0
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 192 288 32 64 	visible 1 
+	backcolor 0.0 0.6 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 224 288 32 64 	visible 1 
+	backcolor 0.0 0.7 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 256 288 32 64 	visible 1 
+	backcolor 0.0 0.8 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 288 288 32 64 	visible 1 
+	backcolor 0.0 0.9 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 320 288 32 64 	visible 1 
+	backcolor 0.0 1.0 0.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 304 320 32 	visible 1 
+	backcolor 0.0 1.0 0.0 1
+	background "truegradient2"
+	
+
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 368 32 64 	visible 1 
+	backcolor 0.0 0.0 0.1 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 64 368 32 64 	visible 1 
+	backcolor 0.0 0.0 0.2
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 96 368 32 64 	visible 1 
+	backcolor 0.0 0.0 0.3 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 128 368 32 64 	visible 1 
+	backcolor 0.0 0.0 0.4 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 160 368 32 64 	visible 1 
+	backcolor 0.0 0.0 0.5
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 192 368 32 64 	visible 1 
+	backcolor 0.0 0.0 0.6 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 224 368 32 64 	visible 1 
+	backcolor 0.0 0.0 0.7 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 256 368 32 64 	visible 1 
+	backcolor 0.0 0.0 0.8 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 288 368 32 64 	visible 1 
+	backcolor 0.0 0.0 0.9 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 320 368 32 64 	visible 1 
+	backcolor 0.0 0.0 1.0 
+	1
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 384 320 32 	visible 1 
+	backcolor 0.0 0.0 1.0 1
+	background "truegradient2"
+	
+
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 400 320 32 	visible 1 
+	backcolor 1.0 1.0 1.0 1
+	background "dithar10xf"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 320 320 32 	visible 1 
+	backcolor 1.0 1.0 1.0 1
+	background "dithar10xf"
+	
+
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 240 320 32 	visible 1 
+	backcolor 1.0 1.0 1.0 1
+	background "dithar10xf"
+	
+
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 160 320 32 	visible 1 
+	backcolor 1.0 1.0 1.0 1
+	background "dithar10xf"
+	
+
+}
+}
+
+}
+}
+}
+}
+}

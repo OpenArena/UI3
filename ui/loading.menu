@@ -20,6 +20,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 ===========================================================================
 */
 
+// Sleeker stylish loading menu?
+
 #include "ui/menudef.h"
 #define	GOBACKTOMAIN  "mainmenu"
 {
@@ -67,6 +69,22 @@ itemDef
 
 
 
+// Faded background
+itemDef {
+      	name mappreviewblurpass6
+	decoration
+	background MP_DIALOGBG
+	style 1
+	type 0
+   	rect -1280 0 2850 480
+
+	backcolor 1.0 1.0 1.0 1.0
+
+	visible 1 
+	hexcolor HEXGENERIC
+}
+
+
 itemDef {
       	name mappreviewblurpass1
 	ownerdraw CG_LOAD_LEVELSHOT
@@ -77,63 +95,23 @@ itemDef {
 	visible 1 
 }
 
-itemDef {
-      	name mappreviewblurpass2
-	ownerdraw CG_LOAD_LEVELSHOT
-	forecolor 1 1 1 0.25
-	decoration
-   	rect -100 -110 880 660
-     
-	visible 1 
-}
-
-itemDef {
-      	name mappreviewblurpass3
-	ownerdraw CG_LOAD_LEVELSHOT
-	forecolor 1 1 1 0.25
-	decoration
-   	rect -100 -100 880 660
-	visible 1 
-}
 
 
-itemDef {
-      	name mappreviewblurpass4
-	ownerdraw CG_LOAD_LEVELSHOT
-	decoration
-   	rect -110 -100 880 660
-	forecolor 1 1 1 0.25
-	visible 1 
-}
 
-
-// Faded background color
+// Faded background
 itemDef {
       	name mappreviewblurpass6
 	decoration
+	background MP_DIALOGBG
 	style 1
 	type 0
    	rect -1280 0 2850 480
-	backcolor 0.4 0.4 0.4 0.75
+
+	backcolor 1.0 1.0 1.0 0.8
 
 	visible 1 
+	hexcolor HEXGENERIC
 }
-
-
-itemDef {
-      	name logobiiiig
-	background "ui/assets/oa"
-	style 1
-	type 0
-	decoration
-	backcolor  0.0 0.0 0.0 0.3
-	//backcolor  0.7 0.7 0.7 1.0
-
-      	scralign ALIGN_LEFT
-   	rect -240 -90 800 800
-	visible 1 
-}
-
 
 
 
@@ -146,6 +124,14 @@ itemdef
       visible 1
 }	
 
+// glow a cool flare behind it
+itemdef
+{
+      name levelshotglow
+      ownerdraw CG_LOAD_LEVELSHOT
+      rect 120 50 400 300
+      visible 1
+}	
 
 
 
@@ -162,6 +148,7 @@ itemDef {
 	scralign ALIGN_RIGHT
    	rect 320 0 320 480
 	visible 1 
+
 }
 
 itemDef {
@@ -250,73 +237,24 @@ itemDef {
 	decoration
 	backcolor  0.0 0.0 0.0 0.6
 
-   	rect -416 377 1700 96
-	visible 1 
-}
-
-itemDef {
-      	name bottombglogo
-	background "ui/assets/oa"
-	style 1
-	type 0
-	decoration
-	backcolor  1.0 1.0 1.0 1.0
-      	scralign ALIGN_LEFT
-   	rect 9 377 96 96
+   	rect -416 405 1700 96
 	visible 1 
 }
 
 
-
-
-
-
-// Stuff stuck to the right
-/*
-itemDef
-    {
-      name nameoflevel
-      rect 210 40 400 120
-      visible MENU_TRUE
-      align ITEM_ALIGN_RIGHT
-      textscale 0.7
-      textaligny 2
-      forecolor 1.0 1.0 1.0 1.0
-      textalignx 0
-      //ownerdraw CG_LOAD_LEVELNAME
-}
-*/
-
-// Layout similar to r
-/*
-itemDef
-{
-      name gametype1
-     // rect 210 60 400 120
-	 rect 15 60 400 6
-	textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
-      visible MENU_TRUE     
- 	align ITEM_ALIGN_LEFT    
- 	textscale 1.0      textaligny 2     
-	ownerdraw CG_GAME_TYPE
-      forecolor 1.0 1.0 1.0 1.0
-      scralign ALIGN_LEFT
-      textalignx 0
-}
-*/
 
 itemDef
 {
       name themapname
-	 rect 129 435 1270 6
+	 rect -320 445 1270 6
 	textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
       visible MENU_TRUE     
- 	align ITEM_ALIGN_LEFT    
+ 	align ITEM_ALIGN_CENTER
  	textscale 0.8      textaligny 2     
 	ownerdraw CG_LOAD_LEVELNAME 
 
       forecolor 1.0 1.0 1.0 1.0
-      scralign ALIGN_LEFT
+      scralign ALIGN_CENTER
       textalignx 0
 }
 

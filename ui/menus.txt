@@ -2,6 +2,7 @@
 // 
 {	
 	loadMenu { "ui/main.menu" }
+	loadMenu { "ui/splashtransition.menu" }
 	loadMenu { "ui/menutest.menu" }
 	loadMenu { "ui/loading.menu" }
 	loadMenu { "ui/main_menu.menu" }
@@ -28,6 +29,13 @@
 	loadMenu { "ui/connecting.menu" }
  	loadMenu { "ui/error.menu" }
 	loadMenu { "ui/transition_campaign.menu" }
+
+	// Debug menu pages for development, video calibration and what not, not necessary to play the game
 	loadMenu { "ui/debug/debug.menu" }
 	loadMenu { "ui/debug/testfilter.menu" }
+	loadMenu { "ui/debug/testtmufilter.menu" }
+	loadMenu { "ui/debug/testblends.menu" }
+	loadMenu { "ui/debug/testgradients.menu" }
+	loadMenu { "ui/debug/testbilinear.menu" }
+	loadMenu { "ui/debug/testdots.menu" }
 }

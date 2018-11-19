@@ -1,0 +1,275 @@
+
+
+
+itemDef {
+      	name bglayouter
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	backcolor 0.14 0.40 0.62 1.0
+	decoration
+	textalign 1
+   	rect 0 0 2048 96
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_LEFT
+	hexcolor 3 1 2 3	// color schemes
+}
+
+itemDef {
+      	name copyright
+	background gradv
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	forecolor 0.7 0.7 0.7 1
+	backcolor 0.1 0.25 0.5 0.75	
+	decoration
+	textalign 1
+   	rect -700 128 2048 512
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_CENTER
+	hexcolor 0 1 2 3	// color schemes
+}
+
+
+// Characters
+itemDef {
+      	name bglayouter
+	background "ui/assets5/chars_m"
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	forecolor 0.7 0.7 0.7 1
+	backcolor 0.14 0.40 0.62 1.0
+	decoration
+	textalign 1
+   	rect 128 0 512 128
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+	hexcolor 1 1 2 3	// color schemes
+
+}
+
+itemDef {
+      	name bglayouter
+	background "ui/assets5/chars_l"
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	forecolor 0.7 0.7 0.7 1
+	backcolor 0.14 0.40 0.62 1.0
+	decoration
+	textalign 1
+   	rect 0 0 512 128
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_LEFT
+	hexcolor 1 1 2 3	// color schemes
+}
+
+// More Characters
+itemDef {
+      	name bglayouter
+	background "ui/assets5/chars_r"
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	forecolor 0.7 0.7 0.7 1
+	backcolor 0.14 0.40 0.62 1.0
+	decoration
+	textalign 1
+   	rect 128 0 512 128
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_RIGHT
+	hexcolor 1 1 2 3	// color schemes
+}
+
+
+
+// logo squares, goes on top of character art bar
+
+itemDef {
+      	name bglayouter
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	backcolor 0 0 0 1.0
+	decoration
+	textalign 1
+   	rect 224 32 192 96
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_CENTER
+}
+
+itemDef {
+      	name bglayouter
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	backcolor 0.14 0.40 0.62 1.0
+	decoration
+	textalign 1
+   	rect 224 128 192 96
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_CENTER
+	hexcolor 0 1 2 3	// color schemes
+}
+
+
+itemDef {
+      	name bglayouter
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	backcolor 0 0 0 1.0
+	decoration
+	textalign 1
+   	rect 228 36 186 186
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_CENTER
+}
+
+
+itemDef {
+      	name bglayouter
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	backcolor 0.14 0.40 0.62 1.0
+	decoration
+	textalign 1
+   	rect 228 36 186 92
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_CENTER
+	hexcolor 0 1 2 3	// color schemes
+}
+
+itemDef {
+      	name bglayouter
+	background "ui/assets/oa"
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	backcolor 1 1 1 1.0
+	decoration
+	textalign 1
+   	rect 228 36 186 186
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_CENTER
+}
+
+
+itemDef {
+      	name bglayouter
+	background "ui/assets5/logotype"
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	backcolor 1 1 1 1.0
+	decoration
+	textalign 1
+   	rect 64 224 512 128
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+      	scralign ALIGN_CENTER
+}
+
+
+
+
+/*
+itemDef {
+      	name copyright
+	text "OpenArena EX Edition\n"
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.5
+	autowrapped
+	forecolor 0.7 0.7 0.7 1
+	decoration
+	textalign 1
+   	rect 300 350 400 330
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+}
+
+*/
+
+// TODO: Redo a more proper boilerplate
+itemDef {
+      	name copyright
+	text "(C) 2005-2017 OA Team. This program is licensed under the GNU General Public License V2. Read COPYING for more details.  This program contains technology from id Software (C)1996-2000.  This program utilizes libVorbis by Xiph.org (C)2000-2002  This progam utilizes "
+	style 1
+	type 0
+	textstyle 3
+      	textscale 0.15
+	autowrapped
+	forecolor 0.7 0.7 0.7 1
+	decoration
+	textalign 1
+   	rect 320 400 512 330
+     	textalignx	0	
+	textaligny	 0
+	visible 1 
+}
+
+
+
+itemDef {
+      	name loadingbit2
+	style 1
+	
+	type 0
+	textstyle 2
+      	textscale 0.5
+   	rect 0 0 0 0
+     	textalignx	 32	
+	textaligny	 24
+	backcolor 1 1 1 1
+	forecolor 1 1 1 1
+
+	visible 0
+}
+

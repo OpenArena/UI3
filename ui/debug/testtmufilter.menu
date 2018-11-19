@@ -1,0 +1,131 @@
+/*
+===========================================================================
+Copyright (C) 2007 Open Arena Team
+
+This file is part of Open Arena.
+
+Open Arena is free software; you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+
+Open Arena is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+===========================================================================
+*/
+
+#include "ui/menudef.h"
+#define	GOBACKTOMAIN  "mainmenu"
+{
+  assetGlobalDef {
+    	smallFont "gfx/2d/bigchars" 12
+    	font "gfx/2d/bigchars" 16				
+    	bigFont "gfx/2d/bigchars" 48
+	cursor "ui/assets/cursor"			
+	itemFocusSound MP_SND_HOVER		
+	shadowColor 0.0 0.0 0.0 0.25	
+    	fadeClamp 1.0	
+	fadeCycle 1	
+	fadeAmount 0.1
+  	}
+	
+
+menuDef {
+    	name "texfiltertest"
+	background MP_BACKGROUND1
+    	fullScreen 1				
+	rect 0 0 853 480
+    	visible MENU_TRUE
+    	forecolor MP_FOCUSCOLOR			
+	focuscolor MP_TEXTCOLOR
+				
+	onOpen { //open mainmenu;
+		
+		//close main;
+		}
+
+	
+itemDef {
+      	name button1
+      	text "Back"
+	background "azurebuttonlong"
+	style 1
+	action	{ 	open debug;close fexfiltertest}
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect 460 420 256 32
+     	textalignx	 32	
+	textaligny	 24
+	forecolor MP_TEXTCOLOR
+
+	visible 1 
+}
+
+itemDef {
+      	name explainer
+	text "Texture Gradients.  Left side is 16x16, right side is 256x32"
+	style 1
+	type 0
+	textstyle 2
+      	textscale 0.27
+	autowrapped
+	forecolor 0.4 0.4 0.5 1
+	decoration
+   	rect 32 60 500 130
+     	textalignx	 12	
+	textaligny	 16
+	visible 1 
+}
+
+
+
+itemDef	{
+	name spinninglogo
+   	rect 0 0 640 480
+	type ITEM_TYPE_MODEL
+	asset_model "models/testing/sorcmedium.md3"
+	model_fovx   70 
+	model_fovy   50 
+	model_rotation  12
+	model_angle 0 0 0
+	style 0
+	decoration 
+	visible 1
+	}
+
+
+itemDef {
+      	name gradient1
+	style 1
+	background "truegradient"
+	type 1
+	decoration
+   	rect 67 120 256 256
+
+	visible 1 
+}
+
+itemDef {
+      	name gradient2
+	style 1
+	background "biggradient"
+	type 1
+	decoration
+   	rect 323 120 256 256
+
+	visible 1 
+}
+}
+
+}
+}
+}
+}
+}

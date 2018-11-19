@@ -6,6 +6,8 @@ itemDef {
 	type 0
 	textstyle 2
 	backcolor TIP_BG
+	cvarTest "ui_hidehelp"
+	hideCVar { "1" }
       	textscale 0.4
 	decoration
    	//rect -1 440 640 40
@@ -25,6 +27,8 @@ itemDef {
 	style 1
 	type 0
 	textstyle 2
+	cvarTest "ui_hidehelp"
+	hideCVar { "1" }
       	textscale 0.2
 	decoration
    	rect 0 457 639 32
@@ -45,6 +49,8 @@ itemDef {
 	textstyle 2
       	textscale 0.4
 	decoration
+	cvarTest "ui_hidehelp"
+	hideCVar { "1" }
    	rect 0 447 639 32
 	scralign ALIGN_LEFT
 	forecolor TIP_COLOR

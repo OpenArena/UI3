@@ -55,7 +55,7 @@ itemDef {
 	type ITEM_TYPE_BUTTON
 	textstyle 2
       	textscale 0.3
-   	rect 40 180 40 32
+   	rect 40 180 40 20
         textalign 0
      	textalignx	32	
 	textaligny	16
@@ -67,6 +67,112 @@ itemDef {
 	visible 1 
 }
 
+itemDef {
+      	name buttonhmaina
+      	text "Texturing Test"
+	background MP_LONGBUTTONBG
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.3
+   	rect 40 200 40 20
+        textalign 0
+     	textalignx	32	
+	textaligny	16
+	forecolor 1 1 1 0.7
+	action	{ 	close debug;
+			open texfiltertest;
+			setcvar ui_menutab "0"; // reset
+	}
+	visible 1 
+}
+
+
+itemDef {
+      	name buttonhmaina
+      	text "Gradient Test"
+	background MP_LONGBUTTONBG
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.3
+   	rect 40 220 40 20
+        textalign 0
+     	textalignx	32	
+	textaligny	16
+	forecolor 1 1 1 0.7
+	action	{ 	close debug;
+			open gradienttest;
+			setcvar ui_menutab "0"; // reset
+	}
+	visible 1 
+}
+
+itemDef {
+      	name buttonhmaina
+      	text "Blend Test"
+	background MP_LONGBUTTONBG
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.3
+   	rect 40 240 40 20
+        textalign 0
+     	textalignx	32	
+	textaligny	16
+	forecolor 1 1 1 0.7
+	action	{ 	close debug;
+			open blendtest;
+			setcvar ui_menutab "0"; // reset
+	}
+	visible 1 
+}
+
+itemDef {
+      	name buttonhmaina
+      	text "Bilinear Test"
+	background MP_LONGBUTTONBG
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.3
+   	rect 40 260 40 20
+        textalign 0
+     	textalignx	32	
+	textaligny	16
+	forecolor 1 1 1 0.7
+	action	{ 	close debug;
+			open bilineartest;
+			setcvar ui_menutab "0"; // reset
+	}
+	visible 1 
+}
+
+
+itemDef {
+      	name buttonhmaina
+      	text "Dot Test"
+	background MP_LONGBUTTONBG
+
+	style 1
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.3
+   	rect 40 280 40 20
+        textalign 0
+     	textalignx	32	
+	textaligny	16
+	forecolor 1 1 1 0.7
+	action	{ 	close debug;
+			open dotfiltertest;
+			setcvar ui_menutab "0"; // reset
+	}
+	visible 1 
+}
 
 
 			
