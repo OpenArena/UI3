@@ -50,6 +50,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	backcolor 	0.2 0 0 0.4
 	visible 1 
+
 }
 
 
@@ -73,6 +74,7 @@ itemDef {
 	}
 	visible 1 
 	mouseEnter { setcvar ui_tip "Dismiss this error." fadein tooltip;   setbackground MP_LONGBUTTONBGA } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -101,6 +103,7 @@ itemDef {
 	}
 	visible 1 
 	mouseEnter { setcvar ui_tip "Play a totally random botmatch!" fadein tooltip;   setbackground MP_LONGBUTTONBGA } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -126,12 +129,13 @@ itemDef {
 	}
 	visible 1 
 	mouseEnter { setcvar ui_tip "Play the single player challenges." fadein tooltip;   setbackground MP_LONGBUTTONBGA } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
 itemDef {
       	name buttonhmain1
-      	text "Join Sever"
+      	text BUTTON_MPLAYER_JOIN
 	background MP_LONGBUTTONBG
 
 	style 1
@@ -151,7 +155,8 @@ itemDef {
 			setcvar ui_menutab "0";
 			play MP_SND_SELECT;  
 			open joinserver;	}
-	visible 1 
+	visible 1
+	hexcolor 0 1 2 3	// color schemes 
 }
 
 
@@ -178,6 +183,7 @@ itemDef {
 			play MP_SND_SELECT;  
 			open playmaker;	}
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -199,6 +205,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -225,6 +232,7 @@ itemDef {
 
 	mouseEnter { setcvar ui_tip "Configure system options." fadein tooltip; setbackground MP_LONGBUTTONBGA } mouseExit { fadeout tooltip; setbackground MP_LONGBUTTONBG} 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -250,7 +258,8 @@ itemDef {
 	}
 
 	mouseEnter { setcvar ui_tip "Configure controls." fadein tooltip; setbackground MP_LONGBUTTONBGA } mouseExit { fadeout tooltip; setbackground MP_LONGBUTTONBG} 
-	visible 1 
+	visible 1
+	hexcolor 0 1 2 3	// color schemes 
 }
 
 itemDef {
@@ -276,7 +285,8 @@ itemDef {
 	textaligny	 24
 	forecolor MP_TEXTCOLOR
 	mouseEnter { setcvar ui_tip "Choose your character and set health handicap." fadein tooltip;  setbackground MP_LONGBUTTONBGA  } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
-	visible 1 
+	visible 1
+	hexcolor 0 1 2 3	// color schemes 
 }
 /*
 
@@ -298,6 +308,7 @@ itemDef {
 	action	{ 			play MP_SND_SELECT;  	}
 	visible 1 
 	mouseEnter { setcvar ui_tip "Learn how to play the game." fadein tooltip;  setbackground MP_LONGBUTTONBGA  } mouseExit { fadeout tooltip;  setbackground MP_LONGBUTTONBG} 
+	hexcolor 0 1 2 3	// color schemes
 }
 */
 itemDef {

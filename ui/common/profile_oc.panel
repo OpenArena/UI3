@@ -26,6 +26,7 @@ itemDef {
 	bordercolor   MP_BOX_BORDER
 	backcolor 	MP_DIALOGBGCOLOR
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -44,6 +45,7 @@ itemDef	{
 	decoration 
 	//backcolor 0.6 0.7 0.9 0.2
 	visible 1
+	hexcolor 0 1 2 3	// color schemes
 	}
 
 itemDef	{
@@ -58,6 +60,7 @@ itemDef	{
 	decoration 
 	backcolor 0.0 0.0 0.0 0.8
 	visible 1
+	hexcolor 0 1 2 3	// color schemes
 	}
 
 
@@ -149,6 +152,7 @@ itemDef {
 	cvarTest "ui_menutab"
 	showCVar { "0" }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 itemDef {
       	name settintheplayername
@@ -168,6 +172,7 @@ itemDef {
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "0" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -187,6 +192,7 @@ itemDef {
 	cvarTest "ui_menutab"
 	showCVar { "0" }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -203,6 +209,7 @@ itemDef {
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "0" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -225,6 +232,7 @@ itemDef {
 	action	{ 	setcvar ui_menutab 1;	 play MP_SND_SELECT;  
 		}
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 // -----------------------------------------------------------
@@ -248,6 +256,7 @@ itemDef {
 	bordercolor   MP_BOX_BORDER
 	backcolor 	MP_DIALOGBGCOLOR
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef	{
@@ -263,6 +272,7 @@ itemDef	{
 	decoration 
 	//backcolor 0.6 0.7 0.9 0.2
 	visible 1
+	hexcolor 0 1 2 3	// color schemes
 	}
 
 
@@ -290,6 +300,7 @@ itemDef	{
 	visible 1
 	mouseEnter { setcvar ui_tip "Select a character" fadein tooltip; } mouseExit { fadeout tooltip;} 	
 	columns 1 2 190 25
+	hexcolor 0 1 2 3	// color schemes
 	}
 /*
 itemDef	{
@@ -316,6 +327,7 @@ itemDef	{
 	visible 1
 	mouseEnter { setcvar ui_tip "Select a character" fadein tooltip; } mouseExit { fadeout tooltip;} 	
 	columns 1 2 190 25
+	hexcolor 0 1 2 3	// color schemes
 	}
 */
 
@@ -340,6 +352,7 @@ itemDef {
 	action	{ 	setcvar ui_menutab 0;	 play MP_SND_SELECT;  
 		}
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 

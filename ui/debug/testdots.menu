@@ -1,0 +1,230 @@
+/*
+===========================================================================
+Copyright (C) 2007 Open Arena Team
+
+This file is part of Open Arena.
+
+Open Arena is free software; you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+
+Open Arena is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+===========================================================================
+*/
+
+#include "ui/menudef.h"
+#define	GOBACKTOMAIN  "mainmenu"
+{
+  assetGlobalDef {
+    	smallFont "gfx/2d/bigchars" 12
+    	font "gfx/2d/bigchars" 16				
+    	bigFont "gfx/2d/bigchars" 48
+	cursor "ui/assets/cursor"			
+	itemFocusSound MP_SND_HOVER		
+	shadowColor 0.0 0.0 0.0 0.25	
+    	fadeClamp 1.0	
+	fadeCycle 1	
+	fadeAmount 0.1
+  	}
+	
+
+menuDef {
+    	name "dotfiltertest"
+	background MP_BACKGROUND1
+    	fullScreen 1				
+	rect 0 0 853 480
+    	visible MENU_TRUE
+    	forecolor MP_FOCUSCOLOR			
+	focuscolor MP_TEXTCOLOR
+				
+	onOpen { //open mainmenu;
+		
+		//close main;
+		}
+
+
+
+// Unblended
+itemDef {
+      	name gradient2
+	style 1
+	background "ui/debug/justdots.tga"
+	type 1
+	decoration
+   	rect 0 0 640 480
+	backcolor 1 1 1 1
+	forecolor 1 1 1 1
+	visible 1 
+	cvarTest "ui_menutab"
+	showCVar { "0" }
+}
+
+// Additive
+itemDef {
+      	name gradient2
+	style 1
+	background "ui/debug/justdotsadditive"
+	type 1
+	decoration
+   	rect 0 0 640 480
+	backcolor 1 1 1 1
+	forecolor 1 1 1 1
+	visible 1 
+	cvarTest "ui_menutab"
+	showCVar { "1" }
+}
+
+// Additive x2
+itemDef {
+      	name gradient2
+	style 1
+	background "ui/debug/justdotsadditivex2"
+	type 1
+	decoration
+   	rect 0 0 640 480
+	backcolor 0.5 0.5 0.5 0.5
+	forecolor 0.5 0.5 0.5 0.5
+	visible 1 
+	cvarTest "ui_menutab"
+	showCVar { "2" }
+}
+
+// Alpha
+itemDef {
+      	name gradient2
+	style 1
+	background "ui/debug/justdotsblend"
+	type 1
+	decoration
+   	rect 0 0 640 480
+	backcolor 1 1 1 1
+	forecolor 1 1 1 1
+	visible 1 
+	cvarTest "ui_menutab"
+	showCVar { "3" }
+}
+
+// Filter
+itemDef {
+      	name gradient2
+	style 1
+	background "ui/debug/justdotsfilter"
+	type 1
+	decoration
+   	rect 0 0 640 480
+	backcolor 1 1 1 1
+	forecolor 1 1 1 1
+	visible 1 
+	cvarTest "ui_menutab"
+	showCVar { "4" }
+}
+
+// The same pixel, but DARKER! Should expose imprecision
+itemDef {
+      	name gradient2
+	style 1
+	background "onereallydarkdot"
+	type 1
+	decoration
+   	rect 0 0 640 480
+	backcolor 1 1 1 1
+	forecolor 1 1 1 1
+	visible 1 
+	cvarTest "ui_menutab"
+	showCVar { "5" }
+}
+itemDef {
+      	name gradient2
+	style 1
+	background "onereallydarkdotblend"
+	type 1
+	decoration
+   	rect 0 0 640 480
+	backcolor 1 1 1 1
+	forecolor 1 1 1 1
+	visible 1 
+	cvarTest "ui_menutab"
+	showCVar { "6" }
+}
+
+itemDef {
+      	name gradient2
+	style 1
+	background "onereallydarkdotadd"
+	type 1
+	decoration
+   	rect 0 0 640 480
+	backcolor 1 1 1 1
+	forecolor 1 1 1 1
+	visible 1 
+	cvarTest "ui_menutab"
+	showCVar { "7" }
+}
+
+itemDef {
+      	name gradient2
+	style 1
+	background "onereallydarkraw"
+	type 1
+	decoration
+   	rect 0 0 640 480
+	backcolor 1 1 1 1
+	forecolor 1 1 1 1
+	visible 1 
+	cvarTest "ui_menutab"
+	showCVar { "8" }
+}
+
+
+
+itemDef {
+      	name fraglimt
+      	text "Blend:"
+	type ITEM_TYPE_MULTI
+	cvar "ui_menutab"
+	cvarFloatList { "Opaque" 0 "Additive" 1 "Additive (x2, Multitexture)" 2 "Alpha Blend" 3 "Filter (Lightmap)" 4 "16 gray" 5 "16 gray blend" 6 "16 gray additive" 7, "no blend" 8}
+	backcolor 0 0 0 0
+	style 1
+	textstyle 6
+      	textscale 0.170
+   	rect 24 450 256 32
+     	textalignx	32	
+	textaligny	 26
+	forecolor 1 1 1 1
+	visible 1 
+}
+
+	
+itemDef {
+      	name button1
+      	text "Back"
+	background "azurebuttonlong"
+	style 1
+	action	{ 	open debug;close dotfiltertest}
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect 460 420 256 32
+     	textalignx	 32	
+	textaligny	 24
+	forecolor MP_TEXTCOLOR
+
+	visible 1 
+}
+
+
+}
+
+}
+}
+}
+}
+}

@@ -1,0 +1,262 @@
+/*
+===========================================================================
+Copyright (C) 2007 Open Arena Team
+
+This file is part of Open Arena.
+
+Open Arena is free software; you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation; either version 2 of the License,
+or (at your option) any later version.
+
+Open Arena is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Foobar; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+===========================================================================
+*/
+
+#include "ui/menudef.h"
+#define	GOBACKTOMAIN  "mainmenu"
+{
+  assetGlobalDef {
+    	smallFont "gfx/2d/bigchars" 12
+    	font "gfx/2d/bigchars" 16				
+    	bigFont "gfx/2d/bigchars" 48
+	cursor "ui/assets/cursor"			
+	itemFocusSound MP_SND_HOVER		
+	shadowColor 0.0 0.0 0.0 0.25	
+    	fadeClamp 1.0	
+	fadeCycle 1	
+	fadeAmount 0.1
+  	}
+	
+
+menuDef {
+    	name "blendtest"
+	background MP_BACKGROUND1
+    	fullScreen 1				
+	rect 0 0 853 480
+    	visible MENU_TRUE
+    	forecolor MP_FOCUSCOLOR			
+	focuscolor MP_TEXTCOLOR
+				
+	onOpen { //open mainmenu;
+		
+		//close main;
+		}
+
+	
+itemDef {
+      	name button1
+      	text "Next"
+	background "azurebuttonlong"
+	style 1
+	action	{ 	open pageone;close pagethree}
+	type ITEM_TYPE_BUTTON
+	textstyle 2
+      	textscale 0.5
+   	rect 460 420 256 32
+     	textalignx	 32	
+	textaligny	 24
+	forecolor MP_TEXTCOLOR
+
+	visible 1 
+}
+
+
+itemDef {
+      	name explainer
+	text "Additive Blend and Overdraw"
+	style 1
+	type 0
+	textstyle 2
+      	textscale 0.27
+	autowrapped
+	forecolor 0.4 0.4 0.5 1
+	decoration
+   	rect 32 60 500 130
+     	textalignx	 12	
+	textaligny	 16
+	visible 1 
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 0 128 640 64 	visible 1 
+	backcolor 0.1 0.1 0.1 
+	1
+}
+
+// just one
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 144 128 128 	visible 1 
+	backcolor 1.0 1.0 1.0 1
+	background "addbob"
+	
+
+}
+
+// two layered on each other
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 192 144 128 128 	visible 1 
+	backcolor 0.5 0.5 0.5 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 192 144 128 128 	visible 1 
+	backcolor 0.5 0.5 0.5 1
+	background "addbob"
+	
+
+}
+
+
+// four layered on each other
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 352 144 128 128 	visible 1 
+	backcolor 0.25 0.25 0.25 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 352 144 128 128 	visible 1 
+	backcolor 0.25 0.25 0.25 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 352 144 128 128 	visible 1 
+	backcolor 0.25 0.25 0.25 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 352 144 128 128 	visible 1 
+	backcolor 0.25 0.25 0.25 1
+	background "addbob"
+	
+
+}
+
+
+// eight layered on each other
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 512 144 128 128 	visible 1 
+	backcolor 0.125 0.125 0.125 1
+	background "addbob"
+	
+
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 512 144 128 128 	visible 1 
+	backcolor 0.125 0.125 0.125 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 512 144 128 128 	visible 1 
+	backcolor 0.125 0.125 0.125 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 512 144 128 128 	visible 1 
+	backcolor 0.125 0.125 0.125 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 512 144 128 128 	visible 1 
+	backcolor 0.125 0.125 0.125 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 512 144 128 128 	visible 1 
+	backcolor 0.125 0.125 0.125 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 512 144 128 128 	visible 1 
+	backcolor 0.125 0.125 0.125 1
+	background "addbob"
+	
+
+}
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 512 144 128 128 	visible 1 
+	backcolor 0.125 0.125 0.125 1
+	background "addbob"
+	
+
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 32 320 128 128 	visible 1 
+	backcolor 1 1 1 1
+	background "ui/debug/testure2"
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 192 320 128 128 	visible 1 
+	backcolor 0.5 0.5 0.5 1
+	background "ui/debug/testure2"
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 384 320 128 128 	visible 1 
+	backcolor 1 1 1 1
+	background "ui/debug/testureadd"
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 0 0 640 480 	visible 1 
+	backcolor 0 0 0 1
+	cvarTest "ui_menutab"
+	showCVar { "1" }
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 0 0 640 480 	visible 1 
+	backcolor 1 1 1 1
+	cvarTest "ui_menutab"
+	showCVar { "1" }
+	background "fillratetest"
+}
+
+itemDef {
+      	name boxe style 1 type 1 decoration    	rect 0 0 640 480 	visible 1 
+	backcolor 1 1 1 1
+	cvarTest "ui_menutab"
+	showCVar { "1" }
+	background "fillratetest2"
+}
+
+}
+
+}
+
+}
+}
+}
+}
+}

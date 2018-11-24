@@ -32,6 +32,7 @@ itemDef {
 			play MP_SND_SELECT;  
 			}
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -55,6 +56,7 @@ itemDef {
 			play MP_SND_SELECT;  
 			}
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -75,6 +77,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -101,6 +104,7 @@ itemDef {
 			open ingameoptionsmenu;	
 	}
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -126,6 +130,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	backcolor MP_BUTTONBGCOLOR
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -151,6 +156,7 @@ itemDef {
 			open ingamecontrolsmenu;	
 	}
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -174,6 +180,7 @@ itemDef {
 	forecolor MP_TEXTCOLOR
 	backcolor MP_BUTTONBGCOLOR
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 

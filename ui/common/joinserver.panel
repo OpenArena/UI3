@@ -27,6 +27,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -47,6 +48,7 @@ itemDef {
 	border 1
 	bordercolor   MP_BOX_BORDER
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -76,6 +78,7 @@ itemDef {
 
 	action { setcvar ui_menutab 0;  play MP_SND_SELECT;   }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -95,6 +98,7 @@ itemDef {
 
 	action { setcvar ui_menutab 1;  play MP_SND_SELECT;  }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 // pressed tabs
@@ -116,6 +120,7 @@ itemDef {
 	decoration
 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {

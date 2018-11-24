@@ -45,7 +45,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define	MP_TABOFF 	"ui/assets5/taboff.tga"
 
 //#define MP_DIALOGBG	"dialogbg_azure"	// used for every every and every box and every box and every box
-#define MP_DIALOGBG	"ui/assets5/uishade2"	// used for every every and every box and every box and every box
+//#define MP_DIALOGBG	"ui/assets5/scan2"	// used for every every and every box and every box and every box
+#define MP_DIALOGBG	"ui/atlas/BG"	// used for every every and every box and every box and every box
+
 
 
 #define MP_INGAMEBUTTONBARBG "ui/assets3/igtopbtn" 
@@ -95,6 +97,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 #define KEYBINDBITTEXTSCALE .1875		// Controls menu columns
 
+
+
 //
 // Offsets and Alignments for main menus and the like (to adjust for like, background decoration images)
 //
@@ -102,8 +106,15 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 #define MMENU_ALIGNITEM ITEM_ALIGN_CENTER
 #define MMENU_OFFSETITEMH 60
+#define TABPOSY		32
 
-
+// Scheme color choices
+#define HEXGENERIC 	0 1 2 3
+#define HEXTITLE	0 -1 -1 -1
+#define HEXLISTBOX	0 1 2 3
+#define HEXMAINBUTTON	0 1 2 3
+#define HEXMAINBG	0 1 2 3
+#define HEXBORDERS	1 1 2 3
 		
 #define MP_KEYBINDMENU "ui/panels/keybind2.bit"
 // uncomment this for simpler keybind choices

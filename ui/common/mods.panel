@@ -27,6 +27,7 @@ itemDef {
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "0" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef
@@ -53,6 +54,7 @@ itemDef
 	columns 1 2 190 25
 	cvarTest "ui_menutab"
 	showCVar { "0" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -77,6 +79,7 @@ itemDef {
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "0" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 // -----------------------------------------------------------
@@ -101,6 +104,7 @@ itemDef {
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "1" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef
@@ -127,6 +131,7 @@ itemDef
 	columns 1 2 190 25
 	cvarTest "ui_menutab"
 	showCVar { "1" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -155,6 +160,7 @@ uiScript runDemo;	close mods;
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "1" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -182,6 +188,7 @@ setcvar com_errorMessage "Benchmark result"
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "1" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -202,6 +209,7 @@ itemDef {
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "1" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -227,6 +235,7 @@ itemDef {
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "2" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef
@@ -253,6 +262,7 @@ itemDef
 	columns 1 2 190 25
 	cvarTest "ui_menutab"
 	showCVar { "2" }
+	hexcolor 0 1 2 3	// color schemes
 }
 itemDef {
       	name button1
@@ -278,6 +288,7 @@ uiScript runCinematic;	close mods;
 	visible 1 
 	cvarTest "ui_menutab"
 	showCVar { "2" }
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -305,6 +316,7 @@ itemDef {
 
 	action { setcvar ui_menutab 0;  play MP_SND_SELECT;   }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -324,6 +336,7 @@ itemDef {
 
 	action { setcvar ui_menutab 1;  play MP_SND_SELECT;  }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -343,6 +356,7 @@ itemDef {
 
 	action { setcvar ui_menutab 2;  play MP_SND_SELECT;  }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -362,6 +376,7 @@ itemDef {
 
 	action { setcvar ui_menutab 3;  play MP_SND_SELECT;  }
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 
@@ -391,6 +406,7 @@ itemDef {
 	decoration
 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -409,6 +425,7 @@ itemDef {
 	textaligny	 16
 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -427,6 +444,7 @@ itemDef {
 	textaligny	 16
 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }
 
 itemDef {
@@ -445,4 +463,5 @@ itemDef {
 	textaligny	 16
 
 	visible 1 
+	hexcolor 0 1 2 3	// color schemes
 }

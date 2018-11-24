@@ -1,3 +1,74 @@
+// Shader atlases for windows of UI3 themes. A lot of this is condensed and redundant
+
+ui/atlas/TL
+{
+	nopicmip
+{ 	map ui/atlas/window.png	blendfunc blend 	tcMod atlas 0 16 0 4 4		
+	rgbGen vertex
+}
+}
+ui/atlas/T
+{
+	nopicmip
+{ 	map ui/atlas/window.png	blendfunc blend 	tcMod atlas 0 1 0 4 4	
+		rgbGen vertex
+}
+}
+ui/atlas/TR
+{
+	nopicmip
+{ 	map ui/atlas/window.png	blendfunc blend 	tcMod atlas 0 2 0 4 4	
+		rgbGen vertex
+}
+}
+
+ui/atlas/L
+{
+	nopicmip
+{ 	map ui/atlas/window.png	blendfunc blend 	tcMod atlas 0 4 0 4 4	
+		rgbGen vertex
+}
+}
+ui/atlas/BG
+{
+	nopicmip
+{ 	map ui/atlas/window.png	blendfunc blend 	tcMod atlas 0 5 0 4 4	
+	rgbGen vertex
+}
+}
+ui/atlas/R
+{
+	nopicmip
+{ 	map ui/atlas/window.png	blendfunc blend 	tcMod atlas 0 6 0 4 4	
+		rgbGen vertex
+}
+}
+
+
+ui/atlas/BL
+{
+	nopicmip
+{ 	map ui/atlas/window.png	blendfunc blend 	tcMod atlas 0 8 0 4 4	
+		rgbGen vertex
+}
+}
+ui/atlas/B
+{
+	nopicmip
+{ 	map ui/atlas/window.png	blendfunc blend 	tcMod atlas 0 9 0 4 4	
+		rgbGen vertex
+}
+}
+ui/atlas/BR
+{
+	nopicmip
+{ 	map ui/atlas/window.png	blendfunc blend 	tcMod atlas 0 10 0 4 4	
+	rgbGen vertex
+}
+}
+
+
+
 grad
 {
 	nopicmip
@@ -228,11 +299,11 @@ models/ui/oalogo128
 
 
 	{
-		map ui/assets5/models/oalogo128ref.tga
+		map models/ui/oalogo128ref.tga
 		tcGen environment 
 	}
 	{
-		map ui/assets5/models/oalogo128.tga
+		map models/ui/oalogo128.tga
 		blendFunc blend
 	}
 
@@ -436,6 +507,19 @@ dialogbg_azure
 		map ui/assets5/scan.tga
 		blendfunc gl_dst_color gl_src_color
 		rgbGen Identity
+		tcGen vector ( 0.03125 0 0 ) ( 0 0.03125 0 ) 
+		
+	}
+
+}
+
+ui/assets5/scan2
+{
+	nomipmaps
+	{
+		map ui/assets5/scan.tga
+		//blendfunc blend
+		rgbGen vertex
 		tcGen vector ( 0.03125 0 0 ) ( 0 0.03125 0 ) 
 		
 	}
@@ -843,4 +927,401 @@ ingamemenublendbg
 
 
 
+
+
+
+// test shaders for secret debug menu
+
+
+
+// Dithering shader, to test filtering differences
+ui/debug/dithering
+{
+	nopicmip
+	nomipmaps
+	{
+
+		map ui/debug/dithering.tga
+		blendfunc blend
+		rgbGen vertex
+		tcGen vector ( 0.03125 0 0 ) ( 0 0.03125 0 ) 
+	}
+
+}
+
+truegradient
+{
+	nopicmip
+	{
+		map ui/debug/gradyent.tga
+		tcMod scale 0.484 0.46875
+	}
+}
+
+truegradient2
+{
+	nopicmip
+	{
+		map ui/debug/gradyent.tga
+		rgbGen Vertex
+		tcMod scale 0.484 0.46875
+	}
+}
+
+dithar10x
+{
+	nopicmip
+	{
+		map ui/debug/dither.tga
+		rgbGen Vertex
+		tcMod scale 10 1
+	}
+}
+
+dithar10xf
+{
+	nopicmip
+	{
+		map ui/debug/dither.tga
+		blendfunc filter
+		tcMod scale 10 1
+	}
+}
+
+biggradient
+{
+	nopicmip
+	{
+		map ui/debug/gradybig.tga
+	}
+}
+
+additivegradient
+{
+	nopicmip
+	{
+		map ui/debug/gradyent.tga
+		blendfunc add
+		rgbGen Vertex
+		tcMod scale 0.5 0.5
+	}
+}
+
+additiveblob
+{
+	nopicmip
+	{
+		map ui/debug/colblbb.tga
+		blendfunc add
+		rgbGen Vertex
+		tcMod scale 1 1
+	}
+}
+
+addbob
+{
+	nopicmip
+	{
+		map ui/debug/colblbb.tga
+		blendfunc add
+		rgbGen Vertex
+		tcMod scale 1 1
+	}
+}
+
+
+ui/debug/testureadd
+{
+	nopicmip
+	{
+		map ui/debug/testure.tga
+		blendfunc add
+		rgbGen Vertex
+		tcMod scale 1 1
+	}
+}
+
+
+ui/debug/justdots
+{
+	nopicmip
+	{
+		map ui/debug/justdots.tga
+		rgbGen Vertex
+		//tcMod scale 0.5 0.5
+		tcMod stretch sawtooth 28 0 0 1
+	}
+}
+
+
+
+ui/debug/justdotsadditive
+{
+	nopicmip
+	{
+		map ui/debug/justdots.tga
+		rgbGen Vertex
+		blendfunc add
+		//tcMod scale 0.5 0.5
+		tcMod stretch sawtooth 28 0 0 1
+	}
+}
+
+
+ui/debug/justdotsadditivex2
+{
+	nopicmip
+	{
+		map ui/debug/justdots.tga
+		rgbGen Vertex
+		blendfunc add
+		tcMod stretch sawtooth 28 0 0 1
+	}
+	{
+		map ui/debug/justdots.tga
+		rgbGen Vertex
+		blendfunc add
+		tcMod stretch sawtooth 28 0 0 1
+	}
+}
+
+ui/debug/justdotsblend
+{
+	nopicmip
+	{
+		map ui/debug/justdots.tga
+		rgbGen Vertex
+		blendfunc blend
+		//tcMod scale 0.5 0.5
+		tcMod stretch sawtooth 28 0 0 1
+	}
+}
+
+ui/debug/justdotsfilter
+{
+	nopicmip
+	{
+		map $whiteimage
+		rgbGen identity
+		//tcMod scale 0.5 0.5
+		tcMod stretch sawtooth 28 0 0 1
+	}
+	{
+		map ui/debug/justdots.tga
+		rgbGen Vertex
+		blendfunc filter
+		//tcMod scale 0.5 0.5
+		tcMod stretch sawtooth 28 0 0 1
+	}
+}
+
+
+fillratetest
+{
+	{
+		map ui/debug/imonfire.tga
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0 0.2
+		tcMod scale 0.2 0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.025 0.2
+		tcMod scale 0.2 0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.05 0.2
+		tcMod scale 0.2 0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.075 0.2
+		tcMod scale 0.2 0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.1 0.2
+		tcMod scale 0.2 0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.125 0.2
+		tcMod scale 0.2 0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.15 0.2
+		tcMod scale 0.2 0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.175 0.2
+		tcMod scale 0.2 0.2
+	}
+}
+
+// more layers
+fillratetest2
+{
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.2 0.2
+		tcMod scale 0.2 -0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.225 0.2
+		tcMod scale 0.2 -0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.25 0.2
+		tcMod scale 0.2 -0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.275 0.2
+		tcMod scale 0.2 -0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.3 0.2
+		tcMod scale 0.2 -0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.325 0.2
+		tcMod scale 0.2 -0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.35 0.2
+		tcMod scale 0.2 -0.2
+	}
+	{
+		map ui/debug/imonfire.tga
+		blendfunc add
+
+		rgbGen wave square 0.1 0 0 1 
+		tcMod turb 0 0.2 0.375 0.2
+		tcMod scale 0.2 -0.2
+	}
+}
+
+// To test the texture filtering quality we can stretch up a 16,16,16 dot and just modulate white over it
+// to expose the lerping
+
+onereallydarkdot
+{
+	{
+		map ui/debug/justdarkerdots.tga
+		tcMod stretch sin 12 0 0 1 
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+}
+
+onereallydarkdotblend
+{
+	{
+		map ui/debug/justdarkerdots.tga
+		blendfunc blend
+		tcMod stretch sin 12 0 0 1 
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+}
+
+onereallydarkdotadd
+{
+	{
+		map ui/debug/justdarkerdots.tga
+		blendfunc add
+		tcMod stretch sin 12 0 0 1 
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+	{
+		map $whiteimage 
+		blendfunc gl_dst_color gl_one
+	}
+}
+
+
+onereallydarkdotraw
+{
+	{
+		map ui/debug/justdarkerdots.tga
+		blendfunc add
+		tcMod stretch sin 12 0 0 1 
+	}
+	
+}
 

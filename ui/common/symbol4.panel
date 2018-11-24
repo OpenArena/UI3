@@ -11,7 +11,7 @@ itemDef	{
 	decoration 
 	visible 1
 	backcolor 	MP_BUTTONBGCOLOR
-
+	hexcolor 0 1 2 3	// color schemes
 	}
 
 
