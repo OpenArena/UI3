@@ -26,6 +26,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 #define	BUTTON_PLAY				"Play"
 #define	BUTTON_SPLAYER				"^1Single Player"
+#define	BUTTON_MPLAYER_JOIN				"^1Multiplayer"
 #define	BUTTON_CUSTOM				"Custom Game"
 #define	BUTTON_JOIN				"Multiplayer"
 #define	BUTTON_OPTIONS				"Options"
