@@ -129,6 +129,14 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define CG_SHOW_OTHERTEAMHASFLAG          0x00020000
 #define CG_SHOW_YOURTEAMHASENEMYFLAG      0x00040000
 #define CG_SHOW_ANYNONTEAMGAME            0x00080000
+#define CG_SHOW_FREEFORALL                0x00100000
+#define CG_SHOW_TEAMDEATHMATCH            0x00200000
+#define CG_SHOW_ELIMINATION               0x00400000
+#define CG_SHOW_CTFELIMINATION            0x00800000
+#define CG_SHOW_LASTMANSTANDING           0x01000000
+#define CG_SHOW_DOUBLEDOMINATION          0x02000000
+#define CG_SHOW_DOMINATION                0x04000000
+#define CG_SHOW_POSSESSION                0x08000000
 #define CG_SHOW_2DONLY										0x10000000
 
 
@@ -145,6 +153,19 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define UI_SHOW_NETANYNONTEAMGAME	 				0x00000400
 #define UI_SHOW_NETANYTEAMGAME		 				0x00000800
 #define UI_SHOW_NOTFAVORITESERVERS				0x00001000
+/* Neon_Knight: More ownerdraw checks. */
+#define UI_SHOW_ANYTEAMOBJECTIVEGAME			0x00010000
+#define UI_SHOW_ANYNONTEAMOBJECTIVEGAME			0x00020000
+#define UI_SHOW_NETANYTEAMOBJECTIVEGAME			0x00040000
+#define UI_SHOW_NETANYNONTEAMOBJECTIVEGAME			0x00080000
+#define UI_SHOW_ANYROUNDGAME			0x00100000
+#define UI_SHOW_ANYNONROUNDGAME			0x00200000
+#define UI_SHOW_NETANYROUNDGAME			0x00400000
+#define UI_SHOW_NETANYNONROUNDGAME			0x00800000
+#define UI_SHOW_ANYTEAMROUNDGAME			0x01000000
+#define UI_SHOW_ANYNONTEAMROUNDGAME			0x02000000
+#define UI_SHOW_NETANYTEAMROUNDGAME			0x04000000
+#define UI_SHOW_NETANYNONTEAMROUNDGAME			0x08000000
 
 // rfactory changes
 // Changed RD
@@ -247,6 +268,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define CG_LOAD_SOUND_LABEL       82
 #define CG_LOAD_GRAPHIC           83
 #define CG_LOAD_GRAPHIC_LABEL     84
+#define CG_LOAD_GAMETYPE          85	// leilei - gametype was missing. this is important.
 #define CG_LOAD_FRAGLIMIT         86	// leilei 
 #define CG_LOAD_TIMELIMIT         87	// leilei 
 #define CG_LOAD_CAPTURELIMIT      88	// leilei 
@@ -407,7 +429,3 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #include "themesetting.txt" 	// User can change this
 
 // please remember to add a new line at the end of a file
-
-
-
-
